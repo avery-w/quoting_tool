@@ -1,0 +1,158 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]: IBM SPSS Statistics
+      - heading "Request an SPSS Quote" [level=1] [ref=e9]
+      - paragraph [ref=e10]: Planning a renewal, expansion, or new purchase? Complete the form below to generate a quote request.
+      - region "SPSS Pricing Update" [ref=e11]:
+        - generic [aria-hidden] [ref=e12]: 📈
+        - generic [ref=e13]:
+          - strong [ref=e14]: SPSS Pricing Update
+          - paragraph [ref=e15]: SPSS pricing is scheduled to increase in January 2027. If you are considering a renewal, expansion, or new purchase, contact an SPSS representative today to discuss your options.
+    - generic [ref=e17]:
+      - group "1 Contact Information" [ref=e18]:
+        - generic [ref=e19]:
+          - generic [ref=e20]: "1"
+          - text: Contact Information
+        - generic [ref=e21]:
+          - generic [ref=e22]:
+            - generic [ref=e23]: Full Name *
+            - textbox "Full Name" [ref=e25]:
+              - /placeholder: Jane Doe
+          - generic [ref=e26]:
+            - generic [ref=e27]: Company / Organization *
+            - textbox "Company / Organization" [ref=e29]:
+              - /placeholder: Acme Corporation
+          - generic [ref=e30]:
+            - generic [ref=e31]: Email Address *
+            - textbox "Email Address" [ref=e33]:
+              - /placeholder: jane.doe@company.com
+          - generic [ref=e34]:
+            - generic [ref=e35]: Country / Region *
+            - textbox "Country / Region" [ref=e37]:
+              - /placeholder: e.g. United States, United Kingdom, Canada
+      - group "2 License & Request Specifications" [ref=e38]:
+        - generic [ref=e39]:
+          - generic [ref=e40]: "2"
+          - text: License & Request Specifications
+        - generic [ref=e41]:
+          - generic [ref=e42]:
+            - generic [ref=e43]: Request Type *
+            - generic [ref=e45]:
+              - generic [ref=e46]:
+                - radio "New Purchase" [checked]
+                - generic [ref=e47] [cursor=pointer]: New Purchase
+              - generic [ref=e48]:
+                - radio "Renewal"
+                - generic [ref=e49] [cursor=pointer]: Renewal
+              - generic [ref=e50]:
+                - radio "Expansion"
+                - generic [ref=e51] [cursor=pointer]: Expansion
+              - generic [ref=e52]:
+                - radio "Not Sure"
+                - generic [ref=e53] [cursor=pointer]: Not Sure
+          - generic [ref=e54]:
+            - generic [ref=e55]: License Type *
+            - generic [ref=e57]:
+              - generic [ref=e58]:
+                - radio "Subscription" [checked]
+                - generic [ref=e59] [cursor=pointer]: Subscription
+              - generic [ref=e60]:
+                - radio "Perpetual"
+                - generic [ref=e61] [cursor=pointer]: Perpetual
+              - generic [ref=e62]:
+                - radio "Not Sure"
+                - generic [ref=e63] [cursor=pointer]: Not Sure
+          - generic [ref=e64]:
+            - generic [ref=e65]: Edition *
+            - generic [ref=e67]:
+              - generic [ref=e68]:
+                - radio "Base"
+                - generic [ref=e69] [cursor=pointer]: Base
+              - generic [ref=e70]:
+                - radio "Standard" [checked]
+                - generic [ref=e71] [cursor=pointer]: Standard
+              - generic [ref=e72]:
+                - radio "Premium"
+                - generic [ref=e73] [cursor=pointer]: Premium
+              - generic [ref=e74]:
+                - radio "Not Sure"
+                - generic [ref=e75] [cursor=pointer]: Not Sure
+        - generic [ref=e76]:
+          - generic [ref=e77]:
+            - generic [ref=e78]: Number of Users / Seats *
+            - spinbutton "Number of Users / Seats" [ref=e80]: "1"
+          - generic [ref=e81]:
+            - generic [ref=e82]: Industry *
+            - combobox "Industry" [ref=e84] [cursor=pointer]:
+              - option "Select your industry..." [disabled] [selected]
+              - option "Banking"
+              - option "Insurance"
+              - option "Healthcare"
+              - option "Government"
+              - option "Education"
+              - option "Retail"
+              - option "Other (Please specify)"
+      - group "3 Additional Products & Comments" [ref=e85]:
+        - generic [ref=e86]:
+          - generic [ref=e87]: "3"
+          - text: Additional Products & Comments
+        - generic [ref=e88]:
+          - generic [ref=e89]:
+            - generic [ref=e90]: Additional Products / Add-ons Needed
+            - generic [ref=e91]: Optional
+          - generic [ref=e92]:
+            - generic [ref=e93] [cursor=pointer]:
+              - checkbox "Amos" [ref=e94]
+              - generic [ref=e95]: Amos
+            - generic [ref=e96] [cursor=pointer]:
+              - checkbox "Custom Tables" [ref=e97]
+              - generic [ref=e98]: Custom Tables
+            - generic [ref=e99] [cursor=pointer]:
+              - checkbox "Forecasting" [ref=e100]
+              - generic [ref=e101]: Forecasting
+            - generic [ref=e102] [cursor=pointer]:
+              - checkbox "Decision Trees" [ref=e103]
+              - generic [ref=e104]: Decision Trees
+            - generic [ref=e105] [cursor=pointer]:
+              - checkbox "Missing Values" [ref=e106]
+              - generic [ref=e107]: Missing Values
+            - generic [ref=e108] [cursor=pointer]:
+              - checkbox "Complex Samples" [ref=e109]
+              - generic [ref=e110]: Complex Samples
+            - generic [ref=e111] [cursor=pointer]:
+              - checkbox "Categories" [ref=e112]
+              - generic [ref=e113]: Categories
+            - generic [ref=e114] [cursor=pointer]:
+              - checkbox "Other" [ref=e115]
+              - generic [ref=e116]: Other
+        - generic [ref=e117]:
+          - generic [ref=e118]:
+            - generic [ref=e119]: Additional Comments or Requirements
+            - generic [ref=e120]: Optional
+          - textbox "Additional Comments or Requirements Optional" [ref=e121]:
+            - /placeholder: Please share any specific requirements, timing constraints, existing licensing details, or questions...
+      - generic [ref=e122]:
+        - button "Clear Form" [ref=e123] [cursor=pointer]
+        - button "Generate Quote Request" [ref=e127] [cursor=pointer]
+    - paragraph [ref=e131]: SPSS Quote Request Generator • Designed for rapid IBM SPSS quote generation
+  - dialog "Quote Request Generated!":
+    - generic:
+      - generic:
+        - generic: Quote Request Generated!
+        - button "Close modal"
+      - generic:
+        - generic:
+          - text: Your default email application is opening with the formatted quote details. If your email client does not open automatically, you can copy the text below and send it to
+          - strong: YOUR_EMAIL@IBM.COM
+          - text: .
+        - paragraph: "Email Subject:"
+        - paragraph: "Email Body:"
+      - generic:
+        - button "Copy Text"
+        - link "Outlook Web":
+          - /url: "#"
+        - link "Open Email App":
+          - /url: "#"
+  - status:
+    - generic: Email copied to clipboard!

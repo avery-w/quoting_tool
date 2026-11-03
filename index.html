@@ -1,0 +1,1983 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IBM SPSS Statistics | Official Quote Request Tool</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230f62fe'/%3E%3Cpath d='M10 22V10h12v3h-8v2h6v3h-6v4h-4z' fill='%23ffffff'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      /* IBM Modern Light Theme & Carbon Palette */
+      --ibm-blue-60: #0f62fe;
+      --ibm-blue-70: #0043ce;
+      --ibm-blue-80: #002d9c;
+      --ibm-blue-10: #edf5ff;
+      --ibm-blue-20: #d0e2ff;
+      --ibm-blue-30: #a6c8ff;
+      --ibm-blue-40: #78a9ff;
+      --ibm-cyan-50: #1192e8;
+      
+      --ibm-gray-100: #161616;
+      --ibm-gray-90: #262626;
+      --ibm-gray-80: #393939;
+      --ibm-gray-70: #525252;
+      --ibm-gray-60: #6f6f6f;
+      --ibm-gray-30: #c6c6c6;
+      --ibm-gray-20: #e0e0e0;
+      --ibm-gray-10: #f4f4f4;
+      
+      --bg-page: #f2f7fc;
+      --bg-surface: #ffffff;
+      --bg-surface-elevated: #ffffff;
+      --bg-subtle: #f7faff;
+      
+      --border-light: #e2ecf7;
+      --border-card: #dce7f3;
+      --border-focus: #0f62fe;
+      --border-selected: #0f62fe;
+      
+      --text-heading: #121619;
+      --text-body: #343a40;
+      --text-muted: #657383;
+      --text-light: #8795a5;
+      
+      --shadow-sm: 0 2px 8px rgba(18, 38, 63, 0.04);
+      --shadow-card: 0 10px 30px rgba(15, 98, 254, 0.05), 0 2px 8px rgba(0, 0, 0, 0.03);
+      --shadow-elevated: 0 20px 48px rgba(15, 98, 254, 0.08), 0 4px 16px rgba(0, 0, 0, 0.04);
+      --shadow-modal: 0 24px 60px rgba(12, 36, 70, 0.22);
+
+      --radius-sm: 6px;
+      --radius-md: 12px;
+      --radius-lg: 18px;
+      --radius-pill: 999px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--bg-page);
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(208, 226, 255, 0.6) 0px, transparent 50%),
+        radial-gradient(at 100% 0%, rgba(237, 245, 255, 0.8) 0px, transparent 60%),
+        radial-gradient(at 50% 30%, rgba(226, 239, 255, 0.4) 0px, transparent 70%);
+      background-attachment: fixed;
+      color: var(--text-body);
+      line-height: 1.55;
+      font-size: 15px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* =========================================================================
+       TOP GLOBAL NAVIGATION BAR (IBM STYLE)
+       ========================================================================= */
+    .ibm-nav {
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-light);
+      position: sticky;
+      top: 0;
+      z-index: 500;
+      height: 64px;
+      display: flex;
+      align-items: center;
+    }
+    .ibm-nav-container {
+      max-width: 1140px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .ibm-nav-left {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+    .ibm-logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--text-heading);
+    }
+    .ibm-8bar-svg {
+      width: 58px;
+      height: 24px;
+      fill: #161616;
+    }
+    .product-division {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-heading);
+      border-left: 1px solid var(--border-light);
+      padding-left: 12px;
+      letter-spacing: -0.2px;
+    }
+    .ibm-nav-right {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .btn-nav-action {
+      background-color: var(--ibm-gray-100);
+      color: #ffffff;
+      padding: 8px 18px;
+      border-radius: var(--radius-pill);
+      font-size: 13.5px;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+    }
+    .btn-nav-action:hover {
+      background-color: var(--ibm-blue-60);
+      transform: translateY(-1px);
+    }
+
+    /* =========================================================================
+       HERO SECTION (VIBRANT IBM BLUE VIBE)
+       ========================================================================= */
+    .hero-section {
+      max-width: 1140px;
+      width: 100%;
+      margin: 40px auto 32px;
+      padding: 0 24px;
+    }
+    .hero-card {
+      background: linear-gradient(135deg, #ffffff 0%, #f0f7ff 100%);
+      border: 1px solid var(--border-card);
+      border-radius: var(--radius-lg);
+      padding: 48px 56px 44px;
+      box-shadow: var(--shadow-elevated);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-card::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 380px;
+      height: 100%;
+      background: radial-gradient(circle at 80% 20%, rgba(15, 98, 254, 0.12) 0%, rgba(17, 146, 232, 0.05) 50%, transparent 80%);
+      pointer-events: none;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background-color: #ffffff;
+      border: 1px solid var(--ibm-blue-20);
+      color: var(--ibm-blue-60);
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      padding: 6px 14px;
+      border-radius: var(--radius-pill);
+      margin-bottom: 18px;
+      box-shadow: var(--shadow-sm);
+    }
+    .hero-badge-dot {
+      width: 8px;
+      height: 8px;
+      background-color: var(--ibm-blue-60);
+      border-radius: 50%;
+    }
+    .hero-title {
+      font-size: 42px;
+      line-height: 1.15;
+      font-weight: 700;
+      color: var(--text-heading);
+      letter-spacing: -1px;
+      margin-bottom: 14px;
+    }
+    .hero-title .gradient-span {
+      background: linear-gradient(90deg, #0f62fe 0%, #0043ce 60%, #1192e8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero-subtitle {
+      font-size: 17px;
+      color: var(--text-muted);
+      max-width: 740px;
+      line-height: 1.55;
+      margin-bottom: 28px;
+    }
+
+    /* In-Hero Pricing Update Notification */
+    .pricing-banner {
+      background: linear-gradient(90deg, #fff9e6 0%, #fffdf5 100%);
+      border: 1px solid #f6d878;
+      border-left: 5px solid #d49800;
+      border-radius: var(--radius-md);
+      padding: 18px 22px;
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      box-shadow: 0 4px 14px rgba(212, 152, 0, 0.08);
+    }
+    .pricing-banner-icon {
+      font-size: 24px;
+      line-height: 1;
+      flex-shrink: 0;
+    }
+    .pricing-banner-content strong {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14.5px;
+      color: #684800;
+      font-weight: 700;
+      margin-bottom: 3px;
+    }
+    .pricing-banner-pill {
+      background: #e5a400;
+      color: #ffffff;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 2px 8px;
+      border-radius: 10px;
+      letter-spacing: 0.5px;
+    }
+    .pricing-banner-content p {
+      font-size: 13.5px;
+      color: #5c4308;
+      line-height: 1.45;
+      margin: 0;
+    }
+
+    /* Edition dynamic notice */
+    .edition-notice {
+      display: none;
+      margin-top: 14px;
+      padding: 14px 18px;
+      background-color: var(--ibm-blue-10);
+      border: 1px solid var(--ibm-blue-20);
+      border-radius: var(--radius-md);
+      font-size: 13.5px;
+      color: var(--ibm-blue-80);
+      line-height: 1.45;
+    }
+    .edition-notice strong {
+      color: var(--ibm-blue-70);
+    }
+
+    /* =========================================================================
+       MAIN FORM CONTAINER
+       ========================================================================= */
+    .form-container {
+      max-width: 1140px;
+      width: 100%;
+      margin: 0 auto 80px;
+      padding: 0 24px;
+    }
+    .form-wrapper {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-card);
+      border-radius: var(--radius-lg);
+      padding: 48px;
+      box-shadow: var(--shadow-elevated);
+    }
+
+    .form-section {
+      margin-bottom: 48px;
+      border: none;
+      padding: 0;
+    }
+    .section-header {
+      margin-bottom: 24px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--border-light);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .section-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text-heading);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      letter-spacing: -0.3px;
+    }
+    .section-num {
+      width: 28px;
+      height: 28px;
+      background-color: var(--ibm-blue-60);
+      color: #ffffff;
+      font-size: 13px;
+      font-weight: 700;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .section-subtext {
+      font-size: 13.5px;
+      color: var(--text-muted);
+    }
+
+    /* Sub-panels (Field Cards) */
+    .field-card {
+      background-color: var(--bg-subtle);
+      border: 1px solid var(--border-card);
+      border-radius: var(--radius-md);
+      padding: 26px 28px;
+      margin-bottom: 24px;
+      transition: all 0.2s ease;
+    }
+    .field-card:last-child {
+      margin-bottom: 0;
+    }
+    .field-card-header {
+      margin-bottom: 18px;
+    }
+    .field-card-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text-heading);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .field-card-desc {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-top: 3px;
+    }
+
+    /* Grid Layouts */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    /* Form Controls */
+    .form-group {
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--text-heading);
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .required-tag {
+      color: #da1e28;
+      margin-left: 4px;
+      font-weight: 700;
+    }
+    .optional-tag {
+      font-size: 11.5px;
+      font-weight: 500;
+      color: var(--text-light);
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 13px 16px;
+      font-size: 14.5px;
+      font-family: inherit;
+      color: var(--text-heading);
+      background-color: #ffffff;
+      border: 1px solid var(--border-card);
+      border-radius: var(--radius-sm);
+      transition: all 0.15s ease-in-out;
+      box-shadow: inset 0 1px 2px rgba(0,0,0,0.02);
+    }
+    input[type="text"]::placeholder,
+    input[type="email"]::placeholder,
+    input[type="number"]::placeholder,
+    textarea::placeholder {
+      color: var(--text-light);
+    }
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="number"]:focus,
+    select:focus,
+    textarea:focus {
+      outline: none;
+      border-color: var(--border-focus);
+      box-shadow: 0 0 0 3px rgba(15, 98, 254, 0.15);
+      background-color: #ffffff;
+    }
+
+    select {
+      appearance: none;
+      -webkit-appearance: none;
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23525252' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+      background-repeat: no-repeat;
+      background-position: right 14px center;
+      background-size: 16px;
+      padding-right: 42px;
+      cursor: pointer;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 110px;
+      line-height: 1.5;
+    }
+
+    /* Validation States */
+    .form-group.has-error input,
+    .form-group.has-error select,
+    .form-group.has-error textarea,
+    .field-card.has-error {
+      border-color: #da1e28 !important;
+      background-color: #fff8f8;
+    }
+    .error-text {
+      display: none;
+      color: #da1e28;
+      font-size: 12.5px;
+      margin-top: 6px;
+      font-weight: 500;
+    }
+    .form-group.has-error .error-text,
+    .field-card.has-error .error-text {
+      display: block;
+    }
+
+    /* =========================================================================
+       IBM RADIO CARD TILES
+       ========================================================================= */
+    .radio-card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 16px;
+    }
+    .radio-card-grid.compact {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 12px;
+    }
+
+    .radio-card {
+      position: relative;
+    }
+    .radio-card input[type="radio"] {
+      position: absolute;
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    .radio-card label {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+      padding: 18px 20px;
+      background-color: #ffffff;
+      border: 1px solid var(--border-card);
+      border-radius: var(--radius-md);
+      cursor: pointer;
+      min-height: 84px;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      margin-bottom: 0;
+      user-select: none;
+      height: 100%;
+      box-shadow: var(--shadow-sm);
+    }
+    .radio-card-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+      margin-bottom: 6px;
+    }
+    .radio-indicator {
+      width: 18px;
+      height: 18px;
+      border: 2px solid var(--ibm-gray-30);
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: all 0.2s ease;
+      background: #ffffff;
+    }
+    .radio-indicator::after {
+      content: '';
+      width: 8px;
+      height: 8px;
+      background-color: #ffffff;
+      border-radius: 50%;
+      opacity: 0;
+      transform: scale(0.4);
+      transition: all 0.2s ease;
+    }
+    .radio-title {
+      font-size: 14.5px;
+      font-weight: 700;
+      color: var(--text-heading);
+    }
+    .radio-desc {
+      font-size: 12.5px;
+      color: var(--text-muted);
+      line-height: 1.4;
+      padding-left: 28px;
+    }
+
+    .radio-card label:hover {
+      background-color: #ffffff;
+      border-color: var(--ibm-blue-60);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(15, 98, 254, 0.08);
+    }
+    .radio-card input[type="radio"]:checked + label {
+      background-color: #ffffff;
+      border-color: var(--ibm-blue-60);
+      border-width: 2px;
+      padding: 17px 19px;
+      box-shadow: 0 8px 22px rgba(15, 98, 254, 0.12);
+    }
+    .radio-card input[type="radio"]:checked + label .radio-indicator {
+      border-color: var(--ibm-blue-60);
+      background-color: var(--ibm-blue-60);
+    }
+    .radio-card input[type="radio"]:checked + label .radio-indicator::after {
+      opacity: 1;
+      transform: scale(1);
+    }
+    .radio-card input[type="radio"]:checked + label .radio-title {
+      color: var(--ibm-blue-60);
+    }
+    .radio-card input[type="radio"]:checked + label .radio-desc {
+      color: var(--text-body);
+    }
+
+    /* =========================================================================
+       CHECKBOX MODULE TILES
+       ========================================================================= */
+    .checkbox-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+      gap: 14px;
+    }
+    .checkbox-card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      background-color: #ffffff;
+      border: 1px solid var(--border-card);
+      border-radius: var(--radius-md);
+      padding: 16px 18px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      user-select: none;
+      margin-bottom: 0;
+      box-shadow: var(--shadow-sm);
+    }
+    .checkbox-card-top {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .checkbox-card input[type="checkbox"] {
+      width: 18px;
+      height: 18px;
+      accent-color: var(--ibm-blue-60);
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+    .checkbox-card span.checkbox-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text-heading);
+    }
+    .checkbox-card span.checkbox-sub {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 6px;
+      padding-left: 28px;
+      line-height: 1.35;
+    }
+    .checkbox-card:hover {
+      border-color: var(--ibm-blue-60);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(15, 98, 254, 0.08);
+    }
+    .checkbox-card.checked {
+      background-color: var(--ibm-blue-10);
+      border-color: var(--ibm-blue-60);
+    }
+    .checkbox-card.checked span.checkbox-title {
+      color: var(--ibm-blue-70);
+    }
+    .checkbox-card.checked span.checkbox-sub {
+      color: var(--ibm-blue-80);
+    }
+
+    /* Other dynamic input */
+    .other-input-container {
+      margin-top: 14px;
+      display: none;
+    }
+    .other-input-container.visible {
+      display: block;
+      animation: fadeIn 0.2s ease-in-out;
+    }
+
+    /* =========================================================================
+       ACTION BAR & BUTTONS (HERO IBM PILL STYLE)
+       ========================================================================= */
+    .action-bar {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 18px;
+      margin-top: 40px;
+      padding-top: 32px;
+      border-top: 1px solid var(--border-light);
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-family: inherit;
+      font-size: 15px;
+      font-weight: 600;
+      padding: 14px 32px;
+      border-radius: var(--radius-pill);
+      cursor: pointer;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      text-decoration: none;
+      border: 1px solid transparent;
+      min-width: 150px;
+    }
+    .btn:focus-visible {
+      outline: 2px solid var(--ibm-blue-60);
+      outline-offset: 2px;
+    }
+    .btn-primary {
+      background-color: var(--ibm-gray-100);
+      color: #ffffff;
+      box-shadow: 0 4px 14px rgba(22, 22, 22, 0.2);
+    }
+    .btn-primary:hover {
+      background-color: var(--ibm-blue-60);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(15, 98, 254, 0.3);
+    }
+    .btn-primary:active {
+      transform: translateY(0);
+      background-color: var(--ibm-blue-70);
+    }
+    .btn-secondary {
+      background-color: #ffffff;
+      color: var(--text-heading);
+      border-color: var(--border-card);
+    }
+    .btn-secondary:hover {
+      background-color: var(--bg-subtle);
+      border-color: var(--ibm-gray-30);
+      transform: translateY(-1px);
+    }
+    .btn svg {
+      width: 18px;
+      height: 18px;
+      fill: currentColor;
+      transition: transform 0.2s ease;
+    }
+    .btn-primary:hover svg {
+      transform: translateX(3px);
+    }
+
+    /* =========================================================================
+       MODAL / DIALOG
+       ========================================================================= */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(18, 22, 26, 0.65);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      z-index: 1000;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.25s ease-in-out;
+    }
+    .modal-overlay.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .modal {
+      background: #ffffff;
+      border: 1px solid var(--border-light);
+      width: 100%;
+      max-width: 700px;
+      max-height: 90vh;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-modal);
+      display: flex;
+      flex-direction: column;
+      transform: translateY(24px) scale(0.98);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      overflow: hidden;
+    }
+    .modal-overlay.active .modal {
+      transform: translateY(0) scale(1);
+    }
+    .modal-header {
+      padding: 24px 28px;
+      background: linear-gradient(135deg, #ffffff 0%, #f4f8fe 100%);
+      border-bottom: 1px solid var(--border-light);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .modal-header-title {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--ibm-blue-70);
+    }
+    .modal-close-btn {
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      color: var(--text-muted);
+      padding: 8px;
+      border-radius: var(--radius-pill);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.15s ease;
+    }
+    .modal-close-btn:hover {
+      background: var(--ibm-gray-10);
+      color: var(--text-heading);
+    }
+    .modal-body {
+      padding: 28px;
+      overflow-y: auto;
+      background: #ffffff;
+    }
+    .modal-info-box {
+      background: var(--ibm-blue-10);
+      border-left: 4px solid var(--ibm-blue-60);
+      padding: 14px 18px;
+      margin-bottom: 22px;
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      font-size: 14px;
+      color: var(--ibm-blue-80);
+      line-height: 1.5;
+    }
+    .preview-box {
+      background: #f8fafc;
+      border: 1px solid var(--border-card);
+      border-radius: var(--radius-sm);
+      padding: 18px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 13px;
+      line-height: 1.6;
+      color: #1e293b;
+      white-space: pre-wrap;
+      word-break: break-word;
+      max-height: 280px;
+      overflow-y: auto;
+      margin-bottom: 20px;
+    }
+    .modal-actions {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 12px;
+      padding: 20px 28px;
+      border-top: 1px solid var(--border-light);
+      background: #fafcff;
+    }
+
+    /* Toast Notification */
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background-color: var(--ibm-gray-100);
+      border: 1px solid var(--ibm-gray-80);
+      color: #ffffff;
+      padding: 14px 22px;
+      border-radius: var(--radius-pill);
+      font-size: 14px;
+      font-weight: 500;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      z-index: 1100;
+      opacity: 0;
+      transform: translateY(10px);
+      pointer-events: none;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .toast.show {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+
+    /* =========================================================================
+       FOOTER
+       ========================================================================= */
+    .footer {
+      background: #ffffff;
+      border-top: 1px solid var(--border-light);
+      padding: 36px 24px 44px;
+      margin-top: auto;
+    }
+    .footer-container {
+      max-width: 1140px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      font-size: 13.5px;
+      color: var(--text-muted);
+    }
+    .footer-links {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+    .footer-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+    .footer-links a:hover {
+      color: var(--ibm-blue-60);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Responsive Queries */
+    @media (max-width: 900px) {
+      .hero-card {
+        padding: 36px 28px;
+      }
+      .hero-title {
+        font-size: 32px;
+      }
+      .form-wrapper {
+        padding: 32px 24px;
+      }
+      .grid-2, .grid-3 {
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .radio-card-grid {
+        grid-template-columns: 1fr;
+      }
+      .action-bar {
+        flex-direction: column-reverse;
+      }
+      .btn {
+        width: 100%;
+      }
+      .modal-actions {
+        flex-direction: column-reverse;
+      }
+      .modal-actions .btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- =========================================================================
+       GLOBAL TOP NAVIGATION (IBM.COM STYLE)
+       ========================================================================= -->
+  <nav class="ibm-nav" aria-label="Main Navigation">
+    <div class="ibm-nav-container">
+      <div class="ibm-nav-left">
+        <a href="#" class="ibm-logo-wrap" aria-label="IBM Homepage">
+          <!-- Official IBM 8-Bar SVG Logo -->
+          <svg class="ibm-8bar-svg" viewBox="0 0 320 128" aria-hidden="true">
+            <path d="M0 0h53.33v16H0zm0 32h53.33v16H0zm0 32h53.33v16H0zm0 32h53.33v16H0zM133.33 0h-53.33v16h53.33zm-53.33 32h53.33v16h-53.33zm0 32h53.33v16h-53.33zm0 32h53.33v16h-53.33zM213.33 0H160v16h53.33zm-53.33 32h53.33v16h-53.33zm0 32h53.33v16h-53.33zm0 32h53.33v16h-53.33zM293.33 0H240v16h53.33zm-53.33 32h53.33v16h-53.33zm0 32h53.33v16h-53.33zm0 32h53.33v16h-53.33z"/>
+          </svg>
+          <span class="product-division">SPSS® Statistics</span>
+        </a>
+      </div>
+      <div class="ibm-nav-right">
+        <a href="#quote-form-section" class="btn-nav-action">
+          Request Quote
+          <svg width="14" height="14" viewBox="0 0 32 32" fill="currentColor"><path d="M22 16l-10-10-1.4 1.4L19.2 16 10.6 24.6 12 26z"/></svg>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- =========================================================================
+       HERO HEADER SECTION
+       ========================================================================= -->
+  <section class="hero-section">
+    <div class="hero-card">
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        IBM SPSS STATISTICS &bull; ENTERPRISE QUOTING
+      </div>
+      <h1 class="hero-title">
+        Request an SPSS Quote.<br>
+        <span class="gradient-span">Smarter data. Better decisions.</span>
+      </h1>
+      <p class="hero-subtitle">
+        Planning a renewal, expansion, or new purchase? Complete the structured form below to instantly generate an official quote request email directly to your IBM representative.
+      </p>
+
+      <!-- In-Hero Pricing Update Notice -->
+      <aside class="pricing-banner" role="region" aria-label="SPSS Pricing Update">
+        <div class="pricing-banner-icon" aria-hidden="true">📈</div>
+        <div class="pricing-banner-content">
+          <strong>
+            SPSS Pricing Update
+            <span class="pricing-banner-pill">January 2027</span>
+          </strong>
+          <p>SPSS pricing is scheduled to increase in January 2027. If you are considering a renewal, expansion, or new purchase, submit your request today to lock in current pricing with your IBM representative.</p>
+        </div>
+      </aside>
+    </div>
+
+  </section>
+
+  <!-- =========================================================================
+       MAIN FORM CARD
+       ========================================================================= -->
+  <main class="form-container" id="quote-form-section">
+    <div class="form-wrapper">
+      <form id="quoteForm" novalidate>
+        
+        <!-- SECTION 1: CONTACT INFORMATION -->
+        <fieldset class="form-section">
+          <div class="section-header">
+            <legend class="section-title">
+              <span class="section-num">1</span>
+              Customer & Contact Information
+            </legend>
+            <span class="section-subtext">Required for quote generation & routing</span>
+          </div>
+          
+          <div class="field-card">
+            <div class="grid-2">
+              
+              <!-- 1. Name -->
+              <div class="form-group" id="group-name">
+                <label for="fullName">
+                  <span>Full Name <span class="required-tag" aria-hidden="true">*</span></span>
+                </label>
+                <input type="text" id="fullName" name="fullName" placeholder="e.g. Jane Doe" required autocomplete="name">
+                <span class="error-text">Please enter your full name.</span>
+              </div>
+
+              <!-- 2. Company -->
+              <div class="form-group" id="group-company">
+                <label for="companyName">
+                  <span>Company / Organization <span class="required-tag" aria-hidden="true">*</span></span>
+                </label>
+                <input type="text" id="companyName" name="companyName" placeholder="e.g. Acme Health Corp" required autocomplete="organization">
+                <span class="error-text">Please enter your company or organization name.</span>
+              </div>
+
+              <!-- 3. Email Address -->
+              <div class="form-group" id="group-email">
+                <label for="userEmail">
+                  <span>Work Email Address <span class="required-tag" aria-hidden="true">*</span></span>
+                </label>
+                <input type="email" id="userEmail" name="userEmail" placeholder="jane.doe@company.com" required autocomplete="email">
+                <span class="error-text">Please enter a valid work email address.</span>
+              </div>
+
+              <!-- 4. Country -->
+              <div class="form-group" id="group-country">
+                <label for="country">
+                  <span>Country / Region <span class="required-tag" aria-hidden="true">*</span></span>
+                </label>
+                <input type="text" id="country" name="country" placeholder="e.g. United States, Canada, UK" required autocomplete="country-name">
+                <span class="error-text">Please enter your country or region.</span>
+              </div>
+
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- SECTION 2: LICENSING MODEL & REQUEST TYPE -->
+        <fieldset class="form-section">
+          <div class="section-header">
+            <legend class="section-title">
+              <span class="section-num">2</span>
+              Licensing Model & Request Type
+            </legend>
+            <span class="section-subtext">Choose your deployment and agreement structure</span>
+          </div>
+          
+          <!-- Request Type Card -->
+          <div class="field-card">
+            <div class="field-card-header">
+              <div class="field-card-title">
+                <span>Request Type <span class="required-tag">*</span></span>
+              </div>
+              <div class="field-card-desc">Select the nature of your quote inquiry.</div>
+            </div>
+            <div class="radio-card-grid compact">
+              <div class="radio-card">
+                <input type="radio" name="requestType" id="req-new" value="New Purchase" checked>
+                <label for="req-new">
+                  <div class="radio-card-header">
+                    <span class="radio-indicator"></span>
+                    <span class="radio-title">New Purchase</span>
+                  </div>
+                  <span class="radio-desc">Procuring new SPSS licenses</span>
+                </label>
+              </div>
+              <div class="radio-card">
+                <input type="radio" name="requestType" id="req-renewal" value="Renewal">
+                <label for="req-renewal">
+                  <div class="radio-card-header">
+                    <span class="radio-indicator"></span>
+                    <span class="radio-title">Renewal</span>
+                  </div>
+                  <span class="radio-desc">Renewing active support / subscription</span>
+                </label>
+              </div>
+              <div class="radio-card">
+                <input type="radio" name="requestType" id="req-expansion" value="Expansion">
+                <label for="req-expansion">
+                  <div class="radio-card-header">
+                    <span class="radio-indicator"></span>
+                    <span class="radio-title">Expansion</span>
+                  </div>
+                  <span class="radio-desc">Adding seats or upgrading tiers</span>
+                </label>
+              </div>
+              <div class="radio-card">
+                <input type="radio" name="requestType" id="req-not-sure" value="Not Sure">
+                <label for="req-not-sure">
+                  <div class="radio-card-header">
+                    <span class="radio-indicator"></span>
+                    <span class="radio-title">Not Sure</span>
+                  </div>
+                  <span class="radio-desc">Explore options with rep</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- License Model Card -->
+          <div class="field-card">
+            <div class="field-card-header">
+              <div class="field-card-title">
+                <span>License Model <span class="required-tag">*</span></span>
+              </div>
+              <div class="field-card-desc">Choose between flexible cloud-managed subscription or traditional perpetual licensing.</div>
+            </div>
+            <div class="radio-card-grid">
+              
+              <!-- 1. Digital Subscription -->
+              <div class="radio-card">
+                <input type="radio" name="licenseType" id="lic-digital" value="Digital Subscription" checked>
+                <label for="lic-digital">
+                  <div class="radio-card-header">
+                    <span class="radio-indicator"></span>
+                    <span class="radio-title">Digital Subscription</span>
+                  </div>
+                  <span class="radio-desc">Cloud-managed monthly or annual desktop access. Includes Base Edition with optional add-on modules.</span>
+                </label>
+              </div>
+
+              <!-- 2. Subscription License (Non-Digital / Tiered) -->
+              <div class="radio-card">
+                <input type="radio" name="licenseType" id="lic-sub-license" value="Subscription License (On-Premises)">
+                <label for="lic-sub-license">
+                  <div class="radio-card-header">
+                    <span class="radio-indicator"></span>
+                    <span class="radio-title">Subscription License</span>
+                  </div>
+                  <span class="radio-desc">Annual on-premises subscription with full support and software updates. Includes the same tiered packages (Base, Standard, Professional, Premium) as perpetual without permanent ownership.</span>
+                </label>
+              </div>
+
+              <!-- 3. Perpetual License -->
+              <div class="radio-card">
+                <input type="radio" name="licenseType" id="lic-perp" value="Perpetual License (On-Premises)">
+                <label for="lic-perp">
+                  <div class="radio-card-header">
+                    <span class="radio-indicator"></span>
+                    <span class="radio-title">Perpetual License</span>
+                  </div>
+                  <span class="radio-desc">Permanent on-premises license ownership available in 4 tiered editions with 1 full year of support included.</span>
+                </label>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Deployment & Billing Details Card -->
+          <div class="field-card">
+            <div class="grid-2">
+              
+              <!-- Deployment Type -->
+              <div class="form-group" id="group-deployment">
+                <label for="deploymentType">
+                  <span>Deployment / Seat Type</span>
+                </label>
+                <select id="deploymentType" name="deploymentType">
+                  <option value="Authorized User (Single Named User)" selected>Authorized User (Single Named User)</option>
+                  <option value="Concurrent User (Floating / Network License)">Concurrent User (Floating / Network License)</option>
+                  <option value="Not Sure">Not Sure / Recommend Best Option</option>
+                </select>
+              </div>
+
+              <!-- Billing Cadence -->
+              <div class="form-group" id="group-billing">
+                <label for="billingCadence">
+                  <span>Billing Preference</span>
+                </label>
+                <select id="billingCadence" name="billingCadence">
+                  <option value="Annual Upfront (Standard / Discounted)" selected>Annual Upfront (Standard / Discounted)</option>
+                  <option value="Monthly (Digital Subscription Only)">Monthly (Subscription Only)</option>
+                  <option value="Multi-Year Agreement">Multi-Year Agreement</option>
+                </select>
+              </div>
+
+            </div>
+          </div>
+
+        </fieldset>
+
+        <!-- SECTION 3: SPSS EDITIONS & TIERS -->
+        <fieldset class="form-section">
+          <div class="section-header">
+            <legend class="section-title">
+              <span class="section-num">3</span>
+              SPSS Statistics Edition / Tier
+            </legend>
+            <span class="section-subtext" id="editionSectionSubtext">Commercial packages (Base, Standard, Professional, Premium)</span>
+          </div>
+          
+          <div class="field-card">
+            <div class="field-card-header">
+              <div class="field-card-title">
+                <span>Select Edition <span class="required-tag">*</span></span>
+              </div>
+              <div class="field-card-desc" id="editionFieldDesc">Select your edition tier or Base foundation.</div>
+            </div>
+
+            <div class="radio-card-grid" id="editionRadioGrid">
+              
+              <!-- Base (Included with Subscription, or standalone Perpetual) -->
+              <div class="radio-card" id="card-ed-base">
+                <input type="radio" name="edition" id="ed-base" value="Base Edition" checked>
+                <label for="ed-base">
+                  <div class="radio-card-header">
+                    <span class="radio-indicator"></span>
+                    <span class="radio-title">Base Edition</span>
+                  </div>
+                  <span class="radio-desc">Core descriptive stats, data prep, linear regression, charting, bootstrapping, and Python/R programmability.</span>
+                </label>
+              </div>
+
+              <!-- Standard (Perpetual Only) -->
+              <div class="radio-card tier-perpetual-only" id="card-ed-std">
+                <input type="radio" name="edition" id="ed-std" value="Standard Edition">
+                <label for="ed-std">
+                  <div class="radio-card-header">
+                    <span class="radio-indicator"></span>
+                    <span class="radio-title">Standard Edition</span>
+                  </div>
+                  <span class="radio-desc">Includes <strong>Base</strong> + <strong>Advanced Statistics</strong> (GLM, GLMM, Bayesian, Survival), <strong>Regression</strong>, and <strong>Custom Tables</strong>.</span>
+                </label>
+              </div>
+
+              <!-- Professional (Perpetual Only) -->
+              <div class="radio-card tier-perpetual-only" id="card-ed-prof">
+                <input type="radio" name="edition" id="ed-prof" value="Professional Edition">
+                <label for="ed-prof">
+                  <div class="radio-card-header">
+                    <span class="radio-indicator"></span>
+                    <span class="radio-title">Professional Edition</span>
+                  </div>
+                  <span class="radio-desc">Includes <strong>Standard</strong> + <strong>Forecasting</strong> (ARIMA/Smoothing), <strong>Decision Trees</strong>, <strong>Missing Values</strong>, <strong>Categories</strong>, and <strong>Data Prep</strong>.</span>
+                </label>
+              </div>
+
+              <!-- Premium (Perpetual Only) -->
+              <div class="radio-card tier-perpetual-only" id="card-ed-prem">
+                <input type="radio" name="edition" id="ed-prem" value="Premium Edition">
+                <label for="ed-prem">
+                  <div class="radio-card-header">
+                    <span class="radio-indicator"></span>
+                    <span class="radio-title">Premium Edition</span>
+                  </div>
+                  <span class="radio-desc">Comprehensive: Includes <strong>Professional</strong> + <strong>Exact Tests</strong>, <strong>Complex Samples</strong>, <strong>Neural Networks</strong>, <strong>Conjoint</strong>, <strong>Direct Marketing</strong>, and <strong>SPSS Amos</strong> (Windows).</span>
+                </label>
+              </div>
+
+              <!-- Not Sure -->
+              <div class="radio-card" id="card-ed-not-sure">
+                <input type="radio" name="edition" id="ed-not-sure" value="Not Sure / Recommend Tier">
+                <label for="ed-not-sure">
+                  <div class="radio-card-header">
+                    <span class="radio-indicator"></span>
+                    <span class="radio-title">Not Sure</span>
+                  </div>
+                  <span class="radio-desc">Help me choose based on our analytical requirements.</span>
+                </label>
+              </div>
+
+            </div>
+
+            <!-- Dynamic notice for Subscription -->
+            <div id="subEditionNotice" class="edition-notice">
+              <strong>Digital Subscription Note:</strong> Digital subscription packages include the <strong>SPSS Base Edition</strong>. To add specialized capabilities (such as Custom Tables, Advanced Stats, Forecasting, Decision Trees, or Amos), simply check the add-on modules you need in <strong>Section 5</strong> below.
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- SECTION 4: USERS, ENVIRONMENT & INDUSTRY -->
+        <fieldset class="form-section">
+          <div class="section-header">
+            <legend class="section-title">
+              <span class="section-num">4</span>
+              Users, Environment & Industry
+            </legend>
+            <span class="section-subtext">Capacity and industry-specific pricing context</span>
+          </div>
+
+          <div class="field-card">
+            <div class="grid-3">
+              
+              <!-- 8. Number of Users -->
+              <div class="form-group" id="group-users">
+                <label for="numUsers">
+                  <span>Number of Users / Seats <span class="required-tag">*</span></span>
+                </label>
+                <input type="number" id="numUsers" name="numUsers" min="1" max="10000" placeholder="e.g. 1, 5, 25" required value="1">
+                <span class="error-text">Please specify a valid number of users (minimum 1).</span>
+              </div>
+
+              <!-- Operating System -->
+              <div class="form-group" id="group-os">
+                <label for="operatingSystem">
+                  <span>Primary OS</span>
+                </label>
+                <select id="operatingSystem" name="operatingSystem">
+                  <option value="Windows" selected>Windows</option>
+                  <option value="macOS">macOS</option>
+                  <option value="Both Windows & macOS">Both Windows & macOS</option>
+                </select>
+              </div>
+
+              <!-- 9. Industry -->
+              <div class="form-group" id="group-industry">
+                <label for="industry">
+                  <span>Industry Sector <span class="required-tag">*</span></span>
+                </label>
+                <select id="industry" name="industry" required>
+                  <option value="" disabled selected>Select industry...</option>
+                  <option value="Banking & Financial Services">Banking & Financial Services</option>
+                  <option value="Insurance">Insurance</option>
+                  <option value="Healthcare & Life Sciences">Healthcare & Life Sciences</option>
+                  <option value="Government & Public Sector">Government & Public Sector</option>
+                  <option value="Education / Higher Ed / Academic">Education / Higher Ed / Academic</option>
+                  <option value="Retail & Consumer Goods">Retail & Consumer Goods</option>
+                  <option value="Telecommunications">Telecommunications</option>
+                  <option value="Market Research & Consulting">Market Research & Consulting</option>
+                  <option value="Other">Other (Please specify)</option>
+                </select>
+                <span class="error-text">Please select an industry.</span>
+              </div>
+
+            </div>
+
+            <!-- Dynamic Other Industry -->
+            <div id="industryOtherWrapper" class="other-input-container">
+              <input type="text" id="industryOther" placeholder="Specify your industry or organization type..." aria-label="Specify industry">
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- SECTION 5: ADD-ON MODULES & EXTENSIONS -->
+        <fieldset class="form-section">
+          <div class="section-header">
+            <legend class="section-title">
+              <span class="section-num">5</span>
+              Specific Add-ons & Bundles Needed
+            </legend>
+            <span class="section-subtext">Optional standalone modules and specialized extensions</span>
+          </div>
+
+          <div class="field-card">
+            <div class="field-card-header">
+              <div class="field-card-title">
+                <span>Select Specific Add-on Modules</span>
+                <span class="optional-tag">Optional</span>
+              </div>
+              <div class="field-card-desc">Select any specialized modules required (for Subscription Add-ons or Traditional Module Add-ons).</div>
+            </div>
+
+            <div class="checkbox-grid">
+              
+              <!-- Amos -->
+              <label class="checkbox-card" for="prod-amos">
+                <div class="checkbox-card-top">
+                  <input type="checkbox" id="prod-amos" name="additionalProducts" value="SPSS Amos (Structural Equation Modeling)">
+                  <span class="checkbox-title">SPSS Amos</span>
+                </div>
+                <span class="checkbox-sub">Structural Equation Modeling & Path Analysis (Windows Desktop)</span>
+              </label>
+
+              <!-- Custom Tables -->
+              <label class="checkbox-card" for="prod-tables">
+                <div class="checkbox-card-top">
+                  <input type="checkbox" id="prod-tables" name="additionalProducts" value="Custom Tables & Advanced Statistics">
+                  <span class="checkbox-title">Custom Tables</span>
+                </div>
+                <span class="checkbox-sub">Interactive drag-and-drop presentation tables & summary matrices</span>
+              </label>
+
+              <!-- Advanced Statistics -->
+              <label class="checkbox-card" for="prod-advstats">
+                <div class="checkbox-card-top">
+                  <input type="checkbox" id="prod-advstats" name="additionalProducts" value="Advanced Statistics (GLM, GLMM, Bayesian, Survival)">
+                  <span class="checkbox-title">Advanced Statistics</span>
+                </div>
+                <span class="checkbox-sub">GLM, MANOVA, Bayesian, Linear Mixed Models, Kaplan-Meier</span>
+              </label>
+
+              <!-- Forecasting -->
+              <label class="checkbox-card" for="prod-forecast">
+                <div class="checkbox-card-top">
+                  <input type="checkbox" id="prod-forecast" name="additionalProducts" value="Forecasting (ARIMA & Exponential Smoothing)">
+                  <span class="checkbox-title">Forecasting</span>
+                </div>
+                <span class="checkbox-sub">ARIMA, Expert Modeler, Temporal Causal Modeling & Seasonal Trends</span>
+              </label>
+
+              <!-- Decision Trees -->
+              <label class="checkbox-card" for="prod-trees">
+                <div class="checkbox-card-top">
+                  <input type="checkbox" id="prod-trees" name="additionalProducts" value="Decision Trees (CHAID, C&RT, QUEST)">
+                  <span class="checkbox-title">Decision Trees</span>
+                </div>
+                <span class="checkbox-sub">CHAID, Exhaustive CHAID, C&RT, and QUEST tree algorithms</span>
+              </label>
+
+              <!-- Complex Samples -->
+              <label class="checkbox-card" for="prod-complex">
+                <div class="checkbox-card-top">
+                  <input type="checkbox" id="prod-complex" name="additionalProducts" value="Complex Samples & Testing">
+                  <span class="checkbox-title">Complex Samples</span>
+                </div>
+                <span class="checkbox-sub">Multi-stage sample designs, stratified sampling, and Exact Tests</span>
+              </label>
+
+              <!-- Missing Values -->
+              <label class="checkbox-card" for="prod-missing">
+                <div class="checkbox-card-top">
+                  <input type="checkbox" id="prod-missing" name="additionalProducts" value="Missing Values & Imputation">
+                  <span class="checkbox-title">Missing Values</span>
+                </div>
+                <span class="checkbox-sub">Patterns analysis, multiple imputation, and EM estimations</span>
+              </label>
+
+              <!-- Categories -->
+              <label class="checkbox-card" for="prod-cat">
+                <div class="checkbox-card-top">
+                  <input type="checkbox" id="prod-cat" name="additionalProducts" value="Categories (Optimal Scaling / CATPCA)">
+                  <span class="checkbox-title">Categories</span>
+                </div>
+                <span class="checkbox-sub">Correspondence analysis, multidimensional scaling, CATPCA</span>
+              </label>
+
+              <!-- Neural Networks -->
+              <label class="checkbox-card" for="prod-neural">
+                <div class="checkbox-card-top">
+                  <input type="checkbox" id="prod-neural" name="additionalProducts" value="Neural Networks">
+                  <span class="checkbox-title">Neural Networks</span>
+                </div>
+                <span class="checkbox-sub">Multilayer perceptron and radial basis function models</span>
+              </label>
+
+              <!-- Other -->
+              <label class="checkbox-card" for="prod-other">
+                <div class="checkbox-card-top">
+                  <input type="checkbox" id="prod-other" name="additionalProducts" value="Other">
+                  <span class="checkbox-title">Other Module</span>
+                </div>
+                <span class="checkbox-sub">Specify any custom modules or specialized tools</span>
+              </label>
+
+            </div>
+
+            <!-- Dynamic Other Product -->
+            <div id="productOtherWrapper" class="other-input-container">
+              <input type="text" id="productOther" placeholder="Specify additional product(s) or modules..." aria-label="Specify other products">
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- SECTION 6: ADDITIONAL COMMENTS -->
+        <fieldset class="form-section">
+          <div class="section-header">
+            <legend class="section-title">
+              <span class="section-num">6</span>
+              Additional Requirements & Comments
+            </legend>
+            <span class="section-subtext">Optional timeline, existing agreements, or special requests</span>
+          </div>
+
+          <div class="field-card">
+            <div class="form-group">
+              <label for="comments">
+                <span>Comments, Target Timeline, or Existing IBM Customer Number</span>
+                <span class="optional-tag">Optional</span>
+              </label>
+              <textarea id="comments" name="comments" placeholder="Please share any specific requirements, timing constraints (e.g. Q1 rollout), existing licensing details, or questions..."></textarea>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- FORM ACTION BUTTONS -->
+        <div class="action-bar">
+          <button type="button" id="clearBtn" class="btn btn-secondary">
+            <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M12 12h2v12h-2zm6 0h2v12h-2z"/><path d="M4 6v2h2v20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8h2V6zm4 22V8h16v20zM12 2h8v2h-8z"/></svg>
+            Clear Form
+          </button>
+          <button type="submit" id="submitBtn" class="btn btn-primary">
+            <span>Generate Quote Request</span>
+            <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M22 16l-10-10-1.4 1.4L19.2 16 10.6 24.6 12 26z"/></svg>
+          </button>
+        </div>
+
+      </form>
+    </div>
+  </main>
+
+  <!-- =========================================================================
+       PREVIEW & SUCCESS MODAL
+       ========================================================================= -->
+  <div class="modal-overlay" id="previewModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal">
+      <div class="modal-header">
+        <div class="modal-header-title" id="modalTitle">
+          <svg width="22" height="22" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16 2a14 14 0 1 0 14 14A14 14 0 0 0 16 2zm-2 19.41l-5.71-5.7 1.42-1.42L14 18.59l8.29-8.3 1.42 1.42z"/></svg>
+          Quote Request Generated!
+        </div>
+        <button type="button" class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal">
+          <svg width="20" height="20" viewBox="0 0 32 32" fill="currentColor"><path d="M24 9.4L22.6 8 16 14.6 9.4 8 8 9.4l6.6 6.6L8 22.6 9.4 24l6.6-6.6 6.6 6.6 1.4-1.4-6.6-6.6L24 9.4z"/></svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-info-box">
+          Your default email application is opening with the formatted quote details. If your email client does not open automatically, you can copy the text below or use the Outlook Web shortcut to send it to <strong id="modalRecipientDisplay">averywiley@ibm.com</strong>.
+        </div>
+        
+        <p style="font-size: 13px; font-weight: 700; margin-bottom: 6px; color: var(--text-heading);">Email Subject:</p>
+        <div id="previewSubject" style="background: #edf5ff; border: 1px solid #d0e2ff; border-radius: var(--radius-sm); padding: 10px 14px; font-size: 13.5px; font-weight: 600; color: #0043ce; margin-bottom: 18px;"></div>
+
+        <p style="font-size: 13px; font-weight: 700; margin-bottom: 6px; color: var(--text-heading);">Email Body Preview:</p>
+        <pre class="preview-box" id="previewBody"></pre>
+      </div>
+      <div class="modal-actions">
+        <button type="button" id="copyBtn" class="btn btn-secondary">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M28 10v18H10V10h18m0-2H10a2 2 0 0 0-2 2v18a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2z"/><path d="M4 18H2V4a2 2 0 0 1 2-2h14v2H4z"/></svg>
+          Copy Text
+        </button>
+        <a id="openOwaBtn" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M26 4H6a2 2 0 0 0-2 2v20a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4v1.2l-10 6.25L6 9.2V8zm0 18H6V11.6l9.47 5.92a1 1 0 0 0 1.06 0L26 11.6z"/></svg>
+          Outlook Web
+        </a>
+        <a id="openMailClientBtn" href="#" class="btn btn-primary">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M28 6H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h24a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2zm0 4.19l-12 7.5-12-7.5V8.53l12 7.5 12-7.5z"/></svg>
+          Open Email App
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toastNotification" role="status" aria-live="polite">
+    <svg width="18" height="18" viewBox="0 0 32 32" fill="#42be65" aria-hidden="true"><path d="M16 2a14 14 0 1 0 14 14A14 14 0 0 0 16 2zm-2 19.41l-5.71-5.7 1.42-1.42L14 18.59l8.29-8.3 1.42 1.42z"/></svg>
+    <span id="toastText">Email copied to clipboard!</span>
+  </div>
+
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div>
+        <p>&copy; 2026 International Business Machines Corporation. IBM, the IBM logo, and SPSS are trademarks of IBM Corp.</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#">SPSS Documentation</a></li>
+        <li><a href="#">Support</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       JAVASCRIPT LOGIC
+       ========================================================================= -->
+  <script>
+    (function() {
+      'use strict';
+
+      // =========================================================================
+      // CONFIGURATION: RECIPIENT EMAIL ADDRESS
+      // Set your destination IBM email address here:
+      // =========================================================================
+      const RECIPIENT_EMAIL = 'averywiley@ibm.com';
+
+      // Elements
+      const form = document.getElementById('quoteForm');
+      const industrySelect = document.getElementById('industry');
+      const industryOtherWrapper = document.getElementById('industryOtherWrapper');
+      const industryOtherInput = document.getElementById('industryOther');
+      const prodOtherCheckbox = document.getElementById('prod-other');
+      const productOtherWrapper = document.getElementById('productOtherWrapper');
+      const productOtherInput = document.getElementById('productOther');
+      const clearBtn = document.getElementById('clearBtn');
+      const previewModal = document.getElementById('previewModal');
+      const modalCloseBtn = document.getElementById('modalCloseBtn');
+      const modalRecipientDisplay = document.getElementById('modalRecipientDisplay');
+      const previewSubject = document.getElementById('previewSubject');
+      const previewBody = document.getElementById('previewBody');
+      const openMailClientBtn = document.getElementById('openMailClientBtn');
+      const openOwaBtn = document.getElementById('openOwaBtn');
+      const copyBtn = document.getElementById('copyBtn');
+      const toast = document.getElementById('toastNotification');
+      const toastText = document.getElementById('toastText');
+
+      // License & Edition dynamic controls
+      const licenseRadios = document.querySelectorAll('input[name="licenseType"]');
+      const perpetualOnlyCards = document.querySelectorAll('.tier-perpetual-only');
+      const subEditionNotice = document.getElementById('subEditionNotice');
+      const edBaseRadio = document.getElementById('ed-base');
+      const edStdRadio = document.getElementById('ed-std');
+      const editionSectionSubtext = document.getElementById('editionSectionSubtext');
+      const editionFieldDesc = document.getElementById('editionFieldDesc');
+
+      function updateEditionForLicenseType() {
+        const digitalRadio = document.getElementById('lic-digital');
+        const isDigital = digitalRadio && digitalRadio.checked;
+
+        if (isDigital) {
+          // Digital Subscription: Base only (+ add-ons in Section 5)
+          perpetualOnlyCards.forEach(function(card) {
+            card.style.display = 'none';
+          });
+          if (subEditionNotice) {
+            subEditionNotice.style.display = 'block';
+          }
+          if (editionSectionSubtext) {
+            editionSectionSubtext.textContent = 'Digital Subscription Base (customizable via Add-ons in Section 5)';
+          }
+          if (editionFieldDesc) {
+            editionFieldDesc.textContent = 'Digital subscriptions include SPSS Base Edition. Select specialized capabilities in Section 5.';
+          }
+
+          // Ensure Base or Not Sure is selected
+          const currentEdition = document.querySelector('input[name="edition"]:checked')?.value || '';
+          if (currentEdition !== 'Base Edition' && currentEdition !== 'Not Sure / Recommend Tier') {
+            edBaseRadio.checked = true;
+          }
+        } else {
+          // Subscription License (On-Premises), Perpetual License, or Not Sure: Show all 4 tiers
+          perpetualOnlyCards.forEach(function(card) {
+            card.style.display = 'block';
+          });
+          if (subEditionNotice) {
+            subEditionNotice.style.display = 'none';
+          }
+          if (editionSectionSubtext) {
+            editionSectionSubtext.textContent = 'Commercial Packages (Base, Standard, Professional, Premium)';
+          }
+          if (editionFieldDesc) {
+            editionFieldDesc.textContent = 'Select an all-in-one edition tier or Base foundation.';
+          }
+        }
+      }
+
+      licenseRadios.forEach(function(radio) {
+        radio.addEventListener('change', updateEditionForLicenseType);
+      });
+
+      // Initial run
+      updateEditionForLicenseType();
+
+      // Industry Other toggle
+      industrySelect.addEventListener('change', function() {
+        if (industrySelect.value === 'Other') {
+          industryOtherWrapper.classList.add('visible');
+          industryOtherInput.focus();
+        } else {
+          industryOtherWrapper.classList.remove('visible');
+          industryOtherInput.value = '';
+        }
+      });
+
+      // Additional Products Checkboxes Visual Styles
+      const checkboxes = document.querySelectorAll('input[name="additionalProducts"]');
+      checkboxes.forEach(function(cb) {
+        cb.addEventListener('change', function() {
+          const parentCard = cb.closest('.checkbox-card');
+          if (cb.checked) {
+            parentCard.classList.add('checked');
+          } else {
+            parentCard.classList.remove('checked');
+          }
+        });
+      });
+
+      prodOtherCheckbox.addEventListener('change', function() {
+        if (prodOtherCheckbox.checked) {
+          productOtherWrapper.classList.add('visible');
+          productOtherInput.focus();
+        } else {
+          productOtherWrapper.classList.remove('visible');
+          productOtherInput.value = '';
+        }
+      });
+
+      // Show Toast Helper
+      let toastTimer = null;
+      function showToast(message) {
+        if (toastTimer) clearTimeout(toastTimer);
+        toastText.textContent = message;
+        toast.classList.add('show');
+        toastTimer = setTimeout(function() {
+          toast.classList.remove('show');
+        }, 3000);
+      }
+
+      // Validation Helper
+      function validateEmail(email) {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+      }
+
+      function clearValidationErrors() {
+        document.querySelectorAll('.form-group, .field-card').forEach(function(group) {
+          group.classList.remove('has-error');
+        });
+      }
+
+      function markError(groupId, focusElem) {
+        const group = document.getElementById(groupId);
+        if (group) {
+          group.classList.add('has-error');
+        }
+        if (focusElem && typeof focusElem.focus === 'function') {
+          focusElem.focus();
+        }
+      }
+
+      // Build Email Content
+      function generateEmailData() {
+        const fullName = document.getElementById('fullName').value.trim();
+        const companyName = document.getElementById('companyName').value.trim();
+        const userEmail = document.getElementById('userEmail').value.trim();
+        const country = document.getElementById('country').value.trim();
+        
+        const requestTypeEl = document.querySelector('input[name="requestType"]:checked');
+        const requestType = requestTypeEl ? requestTypeEl.value : 'Not Sure';
+
+        const licenseTypeEl = document.querySelector('input[name="licenseType"]:checked');
+        const licenseType = licenseTypeEl ? licenseTypeEl.value : 'Not Sure';
+
+        const deploymentType = document.getElementById('deploymentType').value;
+        const billingCadence = document.getElementById('billingCadence').value;
+
+        const editionEl = document.querySelector('input[name="edition"]:checked');
+        const edition = editionEl ? editionEl.value : 'Not Sure';
+
+        const numUsers = document.getElementById('numUsers').value.trim() || '1';
+        const operatingSystem = document.getElementById('operatingSystem').value;
+
+        let industry = industrySelect.value;
+        if (industry === 'Other') {
+          const otherInd = industryOtherInput.value.trim();
+          industry = otherInd ? `Other (${otherInd})` : 'Other';
+        }
+
+        // Additional products
+        const selectedProducts = [];
+        checkboxes.forEach(function(cb) {
+          if (cb.checked) {
+            if (cb.value === 'Other') {
+              const otherProd = productOtherInput.value.trim();
+              selectedProducts.push(otherProd ? `Other (${otherProd})` : 'Other');
+            } else {
+              selectedProducts.push(cb.value);
+            }
+          }
+        });
+        const additionalProductsStr = selectedProducts.length > 0 ? selectedProducts.join(', ') : 'None specified / standard edition bundle';
+
+        const comments = document.getElementById('comments').value.trim() || 'None';
+
+        const recipient = RECIPIENT_EMAIL || 'averywiley@ibm.com';
+        const subject = `SPSS Quote Request - ${companyName}`;
+
+        const body = `Hello,
+
+I would like to request an official quote for IBM SPSS Statistics with the following specifications:
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. CUSTOMER & CONTACT INFORMATION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+• Full Name:        ${fullName}
+• Organization:     ${companyName}
+• Work Email:       ${userEmail}
+• Country / Region: ${country}
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2. LICENSING & DEPLOYMENT MODEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+• Request Type:     ${requestType}
+• License Model:    ${licenseType}
+• Deployment Type:  ${deploymentType}
+• Billing Cadence:  ${billingCadence}
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+3. SPSS EDITION & CAPACITY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+• Edition / Tier:   ${edition}
+• Number of Users:  ${numUsers} Seat(s)
+• Operating System: ${operatingSystem}
+• Industry Sector:  ${industry}
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+4. MODULES & SPECIFIC ADD-ONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+• Selected Add-ons: ${additionalProductsStr}
+• Additional Notes: ${comments}
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Please contact me regarding official pricing, licensing options, and next steps.
+
+Thank you,
+${fullName}
+${companyName}`;
+
+        return {
+          recipient: recipient,
+          subject: subject,
+          body: body
+        };
+      }
+
+      // Form Submission
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        clearValidationErrors();
+
+        let isValid = true;
+        let firstInvalidField = null;
+
+        const fullName = document.getElementById('fullName');
+        if (!fullName.value.trim()) {
+          markError('group-name', !firstInvalidField ? fullName : null);
+          isValid = false;
+          firstInvalidField = firstInvalidField || fullName;
+        }
+
+        const companyName = document.getElementById('companyName');
+        if (!companyName.value.trim()) {
+          markError('group-company', !firstInvalidField ? companyName : null);
+          isValid = false;
+          firstInvalidField = firstInvalidField || companyName;
+        }
+
+        const userEmail = document.getElementById('userEmail');
+        if (!userEmail.value.trim() || !validateEmail(userEmail.value.trim())) {
+          markError('group-email', !firstInvalidField ? userEmail : null);
+          isValid = false;
+          firstInvalidField = firstInvalidField || userEmail;
+        }
+
+        const country = document.getElementById('country');
+        if (!country.value.trim()) {
+          markError('group-country', !firstInvalidField ? country : null);
+          isValid = false;
+          firstInvalidField = firstInvalidField || country;
+        }
+
+        const numUsers = document.getElementById('numUsers');
+        if (!numUsers.value || parseInt(numUsers.value, 10) < 1) {
+          markError('group-users', !firstInvalidField ? numUsers : null);
+          isValid = false;
+          firstInvalidField = firstInvalidField || numUsers;
+        }
+
+        if (!industrySelect.value) {
+          markError('group-industry', !firstInvalidField ? industrySelect : null);
+          isValid = false;
+          firstInvalidField = firstInvalidField || industrySelect;
+        }
+
+        if (!isValid) {
+          if (firstInvalidField) {
+            firstInvalidField.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            firstInvalidField.focus();
+          }
+          return;
+        }
+
+        // Generate data
+        const emailData = generateEmailData();
+
+        // Encode for mailto & Outlook Web Access
+        const mailtoUrl = `mailto:${encodeURIComponent(emailData.recipient)}?subject=${encodeURIComponent(emailData.subject)}&body=${encodeURIComponent(emailData.body)}`;
+        const owaUrl = `https://outlook.office.com/mail/deeplink/compose?to=${encodeURIComponent(emailData.recipient)}&subject=${encodeURIComponent(emailData.subject)}&body=${encodeURIComponent(emailData.body)}`;
+
+        // Populate Preview Modal
+        modalRecipientDisplay.textContent = emailData.recipient;
+        previewSubject.textContent = emailData.subject;
+        previewBody.textContent = emailData.body;
+        openMailClientBtn.href = mailtoUrl;
+        if (openOwaBtn) {
+          openOwaBtn.href = owaUrl;
+        }
+
+        // Display modal
+        previewModal.classList.add('active');
+
+        // Automatically launch mailto client seamlessly
+        setTimeout(function() {
+          window.location.href = mailtoUrl;
+        }, 100);
+      });
+
+      // Modal Close
+      modalCloseBtn.addEventListener('click', function() {
+        previewModal.classList.remove('active');
+      });
+
+      previewModal.addEventListener('click', function(e) {
+        if (e.target === previewModal) {
+          previewModal.classList.remove('active');
+        }
+      });
+
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && previewModal.classList.contains('active')) {
+          previewModal.classList.remove('active');
+        }
+      });
+
+      // Copy to Clipboard Action
+      copyBtn.addEventListener('click', function() {
+        const emailData = generateEmailData();
+        const fullCopyText = `To: ${emailData.recipient}\nSubject: ${emailData.subject}\n\n${emailData.body}`;
+        
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(fullCopyText).then(function() {
+            showToast('Email content copied to clipboard!');
+          }).catch(function() {
+            fallbackCopy(fullCopyText);
+          });
+        } else {
+          fallbackCopy(fullCopyText);
+        }
+      });
+
+      function fallbackCopy(text) {
+        const textarea = document.createElement('textarea');
+        textarea.value = text;
+        textarea.style.position = 'fixed';
+        textarea.style.opacity = '0';
+        document.body.appendChild(textarea);
+        textarea.select();
+        try {
+          document.execCommand('copy');
+          showToast('Email content copied to clipboard!');
+        } catch (err) {
+          showToast('Could not copy automatically. Please copy manually.');
+        }
+        document.body.removeChild(textarea);
+      }
+
+      // Clear Form
+      clearBtn.addEventListener('click', function() {
+        if (confirm('Are you sure you want to clear the form?')) {
+          form.reset();
+          clearValidationErrors();
+          checkboxes.forEach(function(cb) {
+            cb.closest('.checkbox-card').classList.remove('checked');
+          });
+          industryOtherWrapper.classList.remove('visible');
+          industryOtherInput.value = '';
+          productOtherWrapper.classList.remove('visible');
+          productOtherInput.value = '';
+          
+          // Reset default radios
+          document.getElementById('req-new').checked = true;
+          document.getElementById('lic-digital').checked = true;
+          document.getElementById('ed-base').checked = true;
+          document.getElementById('numUsers').value = '1';
+          document.getElementById('deploymentType').value = 'Authorized User (Single Named User)';
+          document.getElementById('billingCadence').value = 'Annual Upfront (Standard / Discounted)';
+          document.getElementById('operatingSystem').value = 'Windows';
+          updateEditionForLicenseType();
+          showToast('Form cleared.');
+        }
+      });
+
+    })();
+  </script>
+</body>
+</html>

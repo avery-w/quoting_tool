@@ -1,0 +1,165 @@
+- generic [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]: IBM SPSS Statistics
+      - heading "Request an SPSS Quote" [level=1] [ref=e9]
+      - paragraph [ref=e10]: Planning a renewal, expansion, or new purchase? Complete the form below to generate a quote request.
+      - region "SPSS Pricing Update" [ref=e11]:
+        - generic [aria-hidden] [ref=e12]: 📈
+        - generic [ref=e13]:
+          - strong [ref=e14]: SPSS Pricing Update
+          - paragraph [ref=e15]: SPSS pricing is scheduled to increase in January 2027. If you are considering a renewal, expansion, or new purchase, contact an SPSS representative today to discuss your options.
+    - generic [ref=e17]:
+      - group "1 Contact Information" [ref=e18]:
+        - generic [ref=e19]:
+          - generic [ref=e20]: "1"
+          - text: Contact Information
+        - generic [ref=e21]:
+          - generic [ref=e22]:
+            - generic [ref=e23]: Full Name *
+            - textbox "Full Name" [ref=e25]:
+              - /placeholder: Jane Doe
+              - text: Alex Morgan
+          - generic [ref=e26]:
+            - generic [ref=e27]: Company / Organization *
+            - textbox "Company / Organization" [ref=e29]:
+              - /placeholder: Acme Corporation
+              - text: Northstar Analytics
+          - generic [ref=e30]:
+            - generic [ref=e31]: Email Address *
+            - textbox "Email Address" [ref=e33]:
+              - /placeholder: jane.doe@company.com
+              - text: alex@northstaranalytics.com
+          - generic [ref=e34]:
+            - generic [ref=e35]: Country / Region *
+            - textbox "Country / Region" [ref=e37]:
+              - /placeholder: e.g. United States, United Kingdom, Canada
+              - text: United Kingdom
+      - group "2 License & Request Specifications" [ref=e38]:
+        - generic [ref=e39]:
+          - generic [ref=e40]: "2"
+          - text: License & Request Specifications
+        - generic [ref=e41]:
+          - generic [ref=e42]:
+            - generic [ref=e43]: Request Type *
+            - generic [ref=e45]:
+              - generic [ref=e46]:
+                - radio "New Purchase" [checked]
+                - generic [ref=e47] [cursor=pointer]: New Purchase
+              - generic [ref=e48]:
+                - radio "Renewal"
+                - generic [ref=e49] [cursor=pointer]: Renewal
+              - generic [ref=e50]:
+                - radio "Expansion"
+                - generic [ref=e51] [cursor=pointer]: Expansion
+              - generic [ref=e52]:
+                - radio "Not Sure"
+                - generic [ref=e53] [cursor=pointer]: Not Sure
+          - generic [ref=e54]:
+            - generic [ref=e55]: License Type *
+            - generic [ref=e57]:
+              - generic [ref=e58]:
+                - radio "Subscription" [checked]
+                - generic [ref=e59] [cursor=pointer]: Subscription
+              - generic [ref=e60]:
+                - radio "Perpetual"
+                - generic [ref=e61] [cursor=pointer]: Perpetual
+              - generic [ref=e62]:
+                - radio "Not Sure"
+                - generic [ref=e63] [cursor=pointer]: Not Sure
+          - generic [ref=e64]:
+            - generic [ref=e65]: Edition *
+            - generic [ref=e67]:
+              - generic [ref=e68]:
+                - radio "Base"
+                - generic [ref=e69] [cursor=pointer]: Base
+              - generic [ref=e70]:
+                - radio "Standard" [checked]
+                - generic [ref=e71] [cursor=pointer]: Standard
+              - generic [ref=e72]:
+                - radio "Premium"
+                - generic [ref=e73] [cursor=pointer]: Premium
+              - generic [ref=e74]:
+                - radio "Not Sure"
+                - generic [ref=e75] [cursor=pointer]: Not Sure
+        - generic [ref=e76]:
+          - generic [ref=e77]:
+            - generic [ref=e78]: Number of Users / Seats *
+            - spinbutton "Number of Users / Seats" [ref=e80]: "1"
+          - generic [ref=e81]:
+            - generic [ref=e82]: Industry *
+            - combobox "Industry" [ref=e84] [cursor=pointer]:
+              - option "Select your industry..." [disabled]
+              - option "Banking" [selected]
+              - option "Insurance"
+              - option "Healthcare"
+              - option "Government"
+              - option "Education"
+              - option "Retail"
+              - option "Other (Please specify)"
+      - group "3 Additional Products & Comments" [ref=e85]:
+        - generic [ref=e86]:
+          - generic [ref=e87]: "3"
+          - text: Additional Products & Comments
+        - generic [ref=e88]:
+          - generic [ref=e89]:
+            - generic [ref=e90]: Additional Products / Add-ons Needed
+            - generic [ref=e91]: Optional
+          - generic [ref=e92]:
+            - generic [ref=e93] [cursor=pointer]:
+              - checkbox "Amos" [ref=e94]
+              - generic [ref=e95]: Amos
+            - generic [ref=e96] [cursor=pointer]:
+              - checkbox "Custom Tables" [ref=e97]
+              - generic [ref=e98]: Custom Tables
+            - generic [ref=e99] [cursor=pointer]:
+              - checkbox "Forecasting" [checked] [ref=e100]
+              - generic [ref=e101]: Forecasting
+            - generic [ref=e102] [cursor=pointer]:
+              - checkbox "Decision Trees" [checked] [ref=e103]
+              - generic [ref=e104]: Decision Trees
+            - generic [ref=e105] [cursor=pointer]:
+              - checkbox "Missing Values" [ref=e106]
+              - generic [ref=e107]: Missing Values
+            - generic [ref=e108] [cursor=pointer]:
+              - checkbox "Complex Samples" [ref=e109]
+              - generic [ref=e110]: Complex Samples
+            - generic [ref=e111] [cursor=pointer]:
+              - checkbox "Categories" [ref=e112]
+              - generic [ref=e113]: Categories
+            - generic [ref=e114] [cursor=pointer]:
+              - checkbox "Other" [ref=e115]
+              - generic [ref=e116]: Other
+        - generic [ref=e117]:
+          - generic [ref=e118]:
+            - generic [ref=e119]: Additional Comments or Requirements
+            - generic [ref=e120]: Optional
+          - textbox "Additional Comments or Requirements Optional" [ref=e121]:
+            - /placeholder: Please share any specific requirements, timing constraints, existing licensing details, or questions...
+            - text: Target deployment date is November 2026. Please include renewal options.
+      - generic [ref=e122]:
+        - button "Clear Form" [ref=e123] [cursor=pointer]
+        - button "Generate Quote Request" [active] [ref=e127] [cursor=pointer]
+    - paragraph [ref=e131]: SPSS Quote Request Generator • Designed for rapid IBM SPSS quote generation
+  - dialog [ref=e132]:
+    - generic [ref=e133]:
+      - generic [ref=e134]:
+        - generic [ref=e135]: Quote Request Generated!
+        - button "Close modal" [ref=e138] [cursor=pointer]
+      - generic [ref=e141]:
+        - generic [ref=e142]:
+          - text: Your default email application is opening with the formatted quote details. If your email client does not open automatically, you can copy the text below and send it to
+          - strong [ref=e143]: averywiley@ibm.com
+          - text: .
+        - paragraph [ref=e144]: "Email Subject:"
+        - generic [ref=e145]: SPSS Quote Request - Northstar Analytics
+        - paragraph [ref=e146]: "Email Body:"
+        - generic [ref=e147]: "Hello, I would like to request an official quote for IBM SPSS with the following specifications: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1. CUSTOMER & CONTACT INFORMATION ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ • Full Name: Alex Morgan • Organization: Northstar Analytics • Work Email: alex@northstaranalytics.com • Country / Region: United Kingdom ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2. LICENSE & CONFIGURATION ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ • Request Type: New Purchase • License Type: Subscription • SPSS Edition: Standard • Number of Users: 1 Seat(s) • Industry Sector: Banking ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3. MODULES & ADDITIONAL DETAILS ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ • Add-on Products: Forecasting, Decision Trees • Comments / Notes: Target deployment date is November 2026. Please include renewal options. ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Please contact me regarding pricing, licensing options, and next steps. Thank you, Alex Morgan Northstar Analytics"
+      - generic [ref=e148]:
+        - button "Copy Text" [ref=e149] [cursor=pointer]
+        - link "Outlook Web" [ref=e153] [cursor=pointer]:
+          - /url: https://outlook.office.com/mail/deeplink/compose?to=averywiley%40ibm.com&subject=SPSS%20Quote%20Request%20-%20Northstar%20Analytics&body=Hello%2C%0A%0AI%20would%20like%20to%20request%20an%20official%20quote%20for%20IBM%20SPSS%20with%20the%20following%20specifications%3A%0A%0A%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%0A1.%20CUSTOMER%20%26%20CONTACT%20INFORMATION%0A%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%0A%E2%80%A2%20Full%20Name%3A%20%20%20%20%20%20%20%20Alex%20Morgan%0A%E2%80%A2%20Organization%3A%20%20%20%20%20Northstar%20Analytics%0A%E2%80%A2%20Work%20Email%3A%20%20%20%20%20%20%20alex%40northstaranalytics.com%0A%E2%80%A2%20Country%20%2F%20Region%3A%20United%20Kingdom%0A%0A%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%0A2.%20LICENSE%20%26%20CONFIGURATION%0A%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%0A%E2%80%A2%20Request%20Type%3A%20%20%20%20%20New%20Purchase%0A%E2%80%A2%20License%20Type%3A%20%20%20%20%20Subscription%0A%E2%80%A2%20SPSS%20Edition%3A%20%20%20%20%20Standard%0A%E2%80%A2%20Number%20of%20Users%3A%20%201%20Seat(s)%0A%E2%80%A2%20Industry%20Sector%3A%20%20Banking%0A%0A%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%0A3.%20MODULES%20%26%20ADDITIONAL%20DETAILS%0A%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%0A%E2%80%A2%20Add-on%20Products%3A%20%20Forecasting%2C%20Decision%20Trees%0A%E2%80%A2%20Comments%20%2F%20Notes%3A%20Target%20deployment%20date%20is%20November%202026.%20Please%20include%20renewal%20options.%0A%0A%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%0A%0APlease%20contact%20me%20regarding%20pricing%2C%20licensing%20options%2C%20and%20next%20steps.%0A%0AThank%20you%2C%0AAlex%20Morgan%0ANorthstar%20Analytics
+        - link "Open Email App" [ref=e156] [cursor=pointer]:
+          - /url: mailto:averywiley%40ibm.com?subject=SPSS%20Quote%20Request%20-%20Northstar%20Analytics&body=Hello%2C%0A%0AI%20would%20like%20to%20request%20an%20official%20quote%20for%20IBM%20SPSS%20with%20the%20following%20specifications%3A%0A%0A%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%0A1.%20CUSTOMER%20%26%20CONTACT%20INFORMATION%0A%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%0A%E2%80%A2%20Full%20Name%3A%20%20%20%20%20%20%20%20Alex%20Morgan%0A%E2%80%A2%20Organization%3A%20%20%20%20%20Northstar%20Analytics%0A%E2%80%A2%20Work%20Email%3A%20%20%20%20%20%20%20alex%40northstaranalytics.com%0A%E2%80%A2%20Country%20%2F%20Region%3A%20United%20Kingdom%0A%0A%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%0A2.%20LICENSE%20%26%20CONFIGURATION%0A%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%0A%E2%80%A2%20Request%20Type%3A%20%20%20%20%20New%20Purchase%0A%E2%80%A2%20License%20Type%3A%20%20%20%20%20Subscription%0A%E2%80%A2%20SPSS%20Edition%3A%20%20%20%20%20Standard%0A%E2%80%A2%20Number%20of%20Users%3A%20%201%20Seat(s)%0A%E2%80%A2%20Industry%20Sector%3A%20%20Banking%0A%0A%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%0A3.%20MODULES%20%26%20ADDITIONAL%20DETAILS%0A%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%0A%E2%80%A2%20Add-on%20Products%3A%20%20Forecasting%2C%20Decision%20Trees%0A%E2%80%A2%20Comments%20%2F%20Notes%3A%20Target%20deployment%20date%20is%20November%202026.%20Please%20include%20renewal%20options.%0A%0A%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%0A%0APlease%20contact%20me%20regarding%20pricing%2C%20licensing%20options%2C%20and%20next%20steps.%0A%0AThank%20you%2C%0AAlex%20Morgan%0ANorthstar%20Analytics
+  - status:
+    - generic: Email copied to clipboard!

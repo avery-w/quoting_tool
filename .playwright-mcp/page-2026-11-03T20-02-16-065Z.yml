@@ -1,0 +1,170 @@
+- generic [ref=e1]:
+  - region "SPSS Pricing Update" [ref=e2]:
+    - generic [ref=e3]:
+      - generic [aria-hidden] [ref=e4]: 📈
+      - generic [ref=e5]:
+        - strong [ref=e6]: SPSS Pricing Update
+        - paragraph [ref=e7]: SPSS pricing is scheduled to increase in January 2027. If you are considering a renewal, expansion, or new purchase, contact an SPSS representative today to discuss your options.
+  - main [ref=e8]:
+    - generic [ref=e9]:
+      - generic [ref=e10]: IBM SPSS Statistics
+      - heading "Request an SPSS Quote" [level=1] [ref=e15]
+      - paragraph [ref=e16]: Planning a renewal, expansion, or new purchase? Complete the form below to generate a quote request.
+    - generic [ref=e17]:
+      - generic [ref=e18]: "Send Quote Request To:"
+      - textbox "Representative or recipient email address" [ref=e23]:
+        - /placeholder: rep@ibm.com or your email
+        - text: sales-rep@ibm.com
+      - generic [ref=e24]: Editable (saved locally)
+    - generic [ref=e26]:
+      - group "1 Contact Information" [ref=e27]:
+        - generic [ref=e28]:
+          - generic [ref=e29]: "1"
+          - text: Contact Information
+        - generic [ref=e30]:
+          - generic [ref=e31]:
+            - generic [ref=e32]: Full Name *
+            - textbox "Full Name" [ref=e34]:
+              - /placeholder: Jane Doe
+              - text: Jane Smith
+          - generic [ref=e35]:
+            - generic [ref=e36]: Company / Organization *
+            - textbox "Company / Organization" [ref=e38]:
+              - /placeholder: Acme Corporation
+              - text: Global Health Research Inc.
+          - generic [ref=e39]:
+            - generic [ref=e40]: Email Address *
+            - textbox "Email Address" [ref=e42]:
+              - /placeholder: jane.doe@company.com
+              - text: jane.smith@globalhealth.org
+          - generic [ref=e43]:
+            - generic [ref=e44]: Country / Region *
+            - textbox "Country / Region" [ref=e46]:
+              - /placeholder: e.g. United States, United Kingdom, Canada
+              - text: United States
+      - group "2 License & Request Specifications" [ref=e47]:
+        - generic [ref=e48]:
+          - generic [ref=e49]: "2"
+          - text: License & Request Specifications
+        - generic [ref=e50]:
+          - generic [ref=e51]:
+            - generic [ref=e52]: Request Type *
+            - generic [ref=e54]:
+              - generic [ref=e55]:
+                - radio "New Purchase" [checked]
+                - generic [ref=e56] [cursor=pointer]: New Purchase
+              - generic [ref=e57]:
+                - radio "Renewal"
+                - generic [ref=e58] [cursor=pointer]: Renewal
+              - generic [ref=e59]:
+                - radio "Expansion"
+                - generic [ref=e60] [cursor=pointer]: Expansion
+              - generic [ref=e61]:
+                - radio "Not Sure"
+                - generic [ref=e62] [cursor=pointer]: Not Sure
+          - generic [ref=e63]:
+            - generic [ref=e64]: License Type *
+            - generic [ref=e66]:
+              - generic [ref=e67]:
+                - radio "Subscription" [checked]
+                - generic [ref=e68] [cursor=pointer]: Subscription
+              - generic [ref=e69]:
+                - radio "Perpetual"
+                - generic [ref=e70] [cursor=pointer]: Perpetual
+              - generic [ref=e71]:
+                - radio "Not Sure"
+                - generic [ref=e72] [cursor=pointer]: Not Sure
+          - generic [ref=e73]:
+            - generic [ref=e74]: Edition *
+            - generic [ref=e76]:
+              - generic [ref=e77]:
+                - radio "Base"
+                - generic [ref=e78] [cursor=pointer]: Base
+              - generic [ref=e79]:
+                - radio "Standard" [checked]
+                - generic [ref=e80] [cursor=pointer]: Standard
+              - generic [ref=e81]:
+                - radio "Premium"
+                - generic [ref=e82] [cursor=pointer]: Premium
+              - generic [ref=e83]:
+                - radio "Not Sure"
+                - generic [ref=e84] [cursor=pointer]: Not Sure
+        - generic [ref=e85]:
+          - generic [ref=e86]:
+            - generic [ref=e87]: Number of Users / Seats *
+            - spinbutton "Number of Users / Seats" [ref=e89]: "10"
+          - generic [ref=e90]:
+            - generic [ref=e91]: Industry *
+            - combobox "Industry" [ref=e93] [cursor=pointer]:
+              - option "Select your industry..." [disabled]
+              - option "Banking"
+              - option "Insurance"
+              - option "Healthcare" [selected]
+              - option "Government"
+              - option "Education"
+              - option "Retail"
+              - option "Other (Please specify)"
+      - group "3 Additional Products & Comments" [ref=e94]:
+        - generic [ref=e95]:
+          - generic [ref=e96]: "3"
+          - text: Additional Products & Comments
+        - generic [ref=e97]:
+          - generic [ref=e98]:
+            - generic [ref=e99]: Additional Products / Add-ons Needed
+            - generic [ref=e100]: Optional
+          - generic [ref=e101]:
+            - generic [ref=e102] [cursor=pointer]:
+              - checkbox "Amos" [checked] [ref=e103]
+              - generic [ref=e104]: Amos
+            - generic [ref=e105] [cursor=pointer]:
+              - checkbox "Custom Tables" [checked] [ref=e106]
+              - generic [ref=e107]: Custom Tables
+            - generic [ref=e108] [cursor=pointer]:
+              - checkbox "Forecasting" [ref=e109]
+              - generic [ref=e110]: Forecasting
+            - generic [ref=e111] [cursor=pointer]:
+              - checkbox "Decision Trees" [ref=e112]
+              - generic [ref=e113]: Decision Trees
+            - generic [ref=e114] [cursor=pointer]:
+              - checkbox "Missing Values" [ref=e115]
+              - generic [ref=e116]: Missing Values
+            - generic [ref=e117] [cursor=pointer]:
+              - checkbox "Complex Samples" [ref=e118]
+              - generic [ref=e119]: Complex Samples
+            - generic [ref=e120] [cursor=pointer]:
+              - checkbox "Categories" [ref=e121]
+              - generic [ref=e122]: Categories
+            - generic [ref=e123] [cursor=pointer]:
+              - checkbox "Other" [ref=e124]
+              - generic [ref=e125]: Other
+        - generic [ref=e126]:
+          - generic [ref=e127]:
+            - generic [ref=e128]: Additional Comments or Requirements
+            - generic [ref=e129]: Optional
+          - textbox "Additional Comments or Requirements Optional" [ref=e130]:
+            - /placeholder: Please share any specific requirements, timing constraints, existing licensing details, or questions...
+            - text: Looking to onboard team by Q1 2027. Need pricing for 10 floating seats.
+      - generic [ref=e131]:
+        - button "Clear Form" [ref=e132] [cursor=pointer]
+        - button "Generate Quote Request" [ref=e136] [cursor=pointer]
+    - paragraph [ref=e140]: SPSS Quote Request Generator • Designed for rapid IBM SPSS quote generation
+  - dialog "Quote Request Generated!":
+    - generic:
+      - generic:
+        - generic: Quote Request Generated!
+        - button "Close modal" [active]
+      - generic:
+        - generic:
+          - text: Your default email application is opening with the formatted quote details. If your email client does not open automatically, you can copy the text below and send it to
+          - strong: sales-rep@ibm.com
+          - text: .
+        - paragraph: "Email Subject:"
+        - generic: SPSS Quote Request - Global Health Research Inc.
+        - paragraph: "Email Body:"
+        - generic: "Hello, I am interested in receiving SPSS pricing information. Name: Jane Smith Company: Global Health Research Inc. Email: jane.smith@globalhealth.org Country: United States Request Type: New Purchase License Type: Subscription Edition: Standard Number of Users: 10 Industry: Healthcare Additional Products: Amos, Custom Tables Additional Comments: Looking to onboard team by Q1 2027. Need pricing for 10 floating seats. Please contact me regarding pricing and next steps. Thank you."
+      - generic:
+        - button "Copy Email Text"
+        - link "Open in Email App":
+          - /url: mailto:sales-rep%40ibm.com?subject=SPSS%20Quote%20Request%20-%20Global%20Health%20Research%20Inc.&body=Hello%2C%0A%0AI%20am%20interested%20in%20receiving%20SPSS%20pricing%20information.%0A%0AName%3A%0AJane%20Smith%0A%0ACompany%3A%0AGlobal%20Health%20Research%20Inc.%0A%0AEmail%3A%0Ajane.smith%40globalhealth.org%0A%0ACountry%3A%0AUnited%20States%0A%0ARequest%20Type%3A%0ANew%20Purchase%0A%0ALicense%20Type%3A%0ASubscription%0A%0AEdition%3A%0AStandard%0A%0ANumber%20of%20Users%3A%0A10%0A%0AIndustry%3A%0AHealthcare%0A%0AAdditional%20Products%3A%0AAmos%2C%20Custom%20Tables%0A%0AAdditional%20Comments%3A%0ALooking%20to%20onboard%20team%20by%20Q1%202027.%20Need%20pricing%20for%2010%20floating%20seats.%0A%0APlease%20contact%20me%20regarding%20pricing%20and%20next%20steps.%0A%0AThank%20you.
+  - status:
+    - generic: Email content copied to clipboard!
