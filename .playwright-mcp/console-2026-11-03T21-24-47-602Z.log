@@ -1,0 +1,3 @@
+[      41ms] ReferenceError: prodOtherCheckbox is not defined
+    at http://127.0.0.1:8080/index.html:1705:7
+    at http://127.0.0.1:8080/index.html:2001:7

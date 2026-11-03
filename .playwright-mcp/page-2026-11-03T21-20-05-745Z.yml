@@ -1,0 +1,317 @@
+- generic [ref=e1]:
+  - navigation "Main Navigation" [ref=e2]:
+    - generic [ref=e3]:
+      - link "IBM Homepage" [ref=e5] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=e8]: SPSS® Statistics
+      - link "Request Quote" [ref=e10] [cursor=pointer]:
+        - /url: "#quote-form-section"
+  - generic [ref=e14]:
+    - generic [ref=e15]: IBM SPSS STATISTICS • ENTERPRISE QUOTING
+    - heading "Request an SPSS Quote. Smarter data. Better decisions." [level=1] [ref=e17]
+    - paragraph [ref=e18]: Planning a renewal, expansion, or new purchase? Complete the structured form below to instantly generate an official quote request email directly to your IBM representative.
+    - region "SPSS Pricing Update" [ref=e19]:
+      - generic [aria-hidden] [ref=e20]: 📈
+      - generic [ref=e21]:
+        - strong [ref=e22]:
+          - text: SPSS Pricing Update
+          - generic [ref=e23]: January 2027
+        - paragraph [ref=e24]: SPSS pricing is scheduled to increase in January 2027. If you are considering a renewal, expansion, or new purchase, submit your request today to lock in current pricing with your IBM representative.
+  - main [ref=e25]:
+    - generic [ref=e27]:
+      - group [ref=e28]:
+        - generic [ref=e29]:
+          - generic [ref=e30]:
+            - generic [ref=e31]: "1"
+            - text: Customer & Contact Information
+          - generic [ref=e32]: Required for quote generation & routing
+        - generic [ref=e34]:
+          - generic [ref=e35]:
+            - generic [ref=e36]: Full Name *
+            - textbox "Full Name" [ref=e38]:
+              - /placeholder: e.g. Jane Doe
+          - generic [ref=e39]:
+            - generic [ref=e40]: Company / Organization *
+            - textbox "Company / Organization" [ref=e42]:
+              - /placeholder: e.g. Acme Health Corp
+          - generic [ref=e43]:
+            - generic [ref=e44]: Work Email Address *
+            - textbox "Work Email Address" [ref=e46]:
+              - /placeholder: jane.doe@company.com
+          - generic [ref=e47]:
+            - generic [ref=e48]: Country / Region *
+            - textbox "Country / Region" [ref=e50]:
+              - /placeholder: e.g. United States, Canada, UK
+      - group [ref=e51]:
+        - generic [ref=e52]:
+          - generic [ref=e53]:
+            - generic [ref=e54]: "2"
+            - text: Licensing Model & Request Type
+          - generic [ref=e55]: Choose your deployment and agreement structure
+        - generic [ref=e56]:
+          - generic [ref=e57]:
+            - generic [ref=e58]: Request Type *
+            - generic [ref=e60]: Select the nature of your quote inquiry.
+          - generic [ref=e61]:
+            - generic [ref=e62]:
+              - radio "New Purchase Procuring new SPSS licenses" [checked]
+              - generic [ref=e63] [cursor=pointer]:
+                - generic [ref=e64]: New Purchase
+                - generic [ref=e67]: Procuring new SPSS licenses
+            - generic [ref=e68]:
+              - radio "Renewal Renewing active support / subscription"
+              - generic [ref=e69] [cursor=pointer]:
+                - generic [ref=e70]: Renewal
+                - generic [ref=e73]: Renewing active support / subscription
+            - generic [ref=e74]:
+              - radio "Expansion Adding seats or upgrading tiers"
+              - generic [ref=e75] [cursor=pointer]:
+                - generic [ref=e76]: Expansion
+                - generic [ref=e79]: Adding seats or upgrading tiers
+            - generic [ref=e80]:
+              - radio "Not Sure Explore options with rep"
+              - generic [ref=e81] [cursor=pointer]:
+                - generic [ref=e82]: Not Sure
+                - generic [ref=e85]: Explore options with rep
+        - generic [ref=e86]:
+          - generic [ref=e87]:
+            - generic [ref=e88]: License Model *
+            - generic [ref=e90]: Choose between flexible cloud-managed subscription or traditional perpetual licensing.
+          - generic [ref=e91]:
+            - generic [ref=e92]:
+              - radio "Digital Subscription Cloud-managed monthly or annual desktop access. Includes Base Edition with optional add-on modules."
+              - generic [ref=e93] [cursor=pointer]:
+                - generic [ref=e94]: Digital Subscription
+                - generic [ref=e97]: Cloud-managed monthly or annual desktop access. Includes Base Edition with optional add-on modules.
+            - generic [ref=e98]:
+              - radio "Subscription License Annual on-premises subscription with full support and software updates. Includes the same tiered packages (Base, Standard, Professional, Premium) as perpetual without permanent ownership."
+              - generic [ref=e99] [cursor=pointer]:
+                - generic [ref=e100]: Subscription License
+                - generic [ref=e103]: Annual on-premises subscription with full support and software updates. Includes the same tiered packages (Base, Standard, Professional, Premium) as perpetual without permanent ownership.
+            - generic [ref=e104]:
+              - radio "Perpetual License Permanent on-premises license ownership available in 4 tiered editions with 1 full year of support included." [checked] [active]
+              - generic [ref=e105] [cursor=pointer]:
+                - generic [ref=e106]: Perpetual License
+                - generic [ref=e109]: Permanent on-premises license ownership available in 4 tiered editions with 1 full year of support included.
+        - generic [ref=e111]:
+          - generic [ref=e112]: Deployment / Seat Type
+          - combobox "Deployment / Seat Type" [ref=e114] [cursor=pointer]:
+            - option "Authorized User (Single Named User)" [selected]
+            - option "Concurrent User (Floating / Network License)"
+            - option "Not Sure / Recommend Best Option"
+      - group [ref=e115]:
+        - generic [ref=e116]:
+          - generic [ref=e117]:
+            - generic [ref=e118]: "3"
+            - text: SPSS Statistics Edition / Tier
+          - generic [ref=e119]: Commercial Packages (Base, Standard, Professional, Premium)
+        - generic [ref=e120]:
+          - generic [ref=e121]:
+            - generic [ref=e122]: Select Edition *
+            - generic [ref=e124]: Select an all-in-one edition tier or Base foundation.
+          - generic [ref=e125]:
+            - generic [ref=e126]:
+              - radio "Base Edition Core descriptive stats, data prep, linear regression, charting, bootstrapping, and Python/R programmability." [checked]
+              - generic [ref=e127] [cursor=pointer]:
+                - generic [ref=e128]: Base Edition
+                - generic [ref=e131]: Core descriptive stats, data prep, linear regression, charting, bootstrapping, and Python/R programmability.
+            - generic [ref=e247]:
+              - radio "Standard Edition Includes Base + Advanced Statistics (GLM, GLMM, Bayesian, Survival), Regression, and Custom Tables."
+              - generic [ref=e248] [cursor=pointer]:
+                - generic [ref=e249]: Standard Edition
+                - generic [ref=e252]:
+                  - text: Includes
+                  - strong [ref=e253]: Base
+                  - text: +
+                  - strong [ref=e254]: Advanced Statistics
+                  - text: (GLM, GLMM, Bayesian, Survival),
+                  - strong [ref=e255]: Regression
+                  - text: ", and"
+                  - strong [ref=e256]: Custom Tables
+                  - text: .
+            - generic [ref=e257]:
+              - radio "Professional Edition Includes Standard + Forecasting (ARIMA/Smoothing), Decision Trees, Missing Values, Categories, and Data Prep."
+              - generic [ref=e258] [cursor=pointer]:
+                - generic [ref=e259]: Professional Edition
+                - generic [ref=e262]:
+                  - text: Includes
+                  - strong [ref=e263]: Standard
+                  - text: +
+                  - strong [ref=e264]: Forecasting
+                  - text: (ARIMA/Smoothing),
+                  - strong [ref=e265]: Decision Trees
+                  - text: ","
+                  - strong [ref=e266]: Missing Values
+                  - text: ","
+                  - strong [ref=e267]: Categories
+                  - text: ", and"
+                  - strong [ref=e268]: Data Prep
+                  - text: .
+            - generic [ref=e269]:
+              - 'radio "Premium Edition Comprehensive: Includes Professional + Exact Tests, Complex Samples, Neural Networks, Conjoint, Direct Marketing, and SPSS Amos (Windows)."'
+              - generic [ref=e270] [cursor=pointer]:
+                - generic [ref=e271]: Premium Edition
+                - generic [ref=e274]:
+                  - text: "Comprehensive: Includes"
+                  - strong [ref=e275]: Professional
+                  - text: +
+                  - strong [ref=e276]: Exact Tests
+                  - text: ","
+                  - strong [ref=e277]: Complex Samples
+                  - text: ","
+                  - strong [ref=e278]: Neural Networks
+                  - text: ","
+                  - strong [ref=e279]: Conjoint
+                  - text: ","
+                  - strong [ref=e280]: Direct Marketing
+                  - text: ", and"
+                  - strong [ref=e281]: SPSS Amos
+                  - text: (Windows).
+            - generic [ref=e132]:
+              - radio "Not Sure Help me choose based on our analytical requirements."
+              - generic [ref=e133] [cursor=pointer]:
+                - generic [ref=e134]: Not Sure
+                - generic [ref=e137]: Help me choose based on our analytical requirements.
+      - group [ref=e142]:
+        - generic [ref=e143]:
+          - generic [ref=e144]:
+            - generic [ref=e145]: "4"
+            - text: Users & Institution Context
+          - generic [ref=e146]: Capacity, academic status, and existing account identification
+        - generic [ref=e147]:
+          - generic [ref=e148]:
+            - generic [ref=e149]:
+              - generic [ref=e150]: Number of Users / Seats *
+              - spinbutton "Number of Users / Seats *" [ref=e152]: "1"
+            - generic [ref=e153]:
+              - generic [ref=e154]: Academic / University Institution? *
+              - generic [ref=e156]:
+                - generic [ref=e157]:
+                  - radio "No (Commercial)" [checked]
+                  - generic [ref=e158] [cursor=pointer]: No (Commercial)
+                - generic [ref=e162]:
+                  - radio "Yes (Academic)"
+                  - generic [ref=e163] [cursor=pointer]: Yes (Academic)
+          - generic [ref=e168]:
+            - generic [ref=e169]: Do you have an existing IBM Customer Number (ICN)?
+            - generic [ref=e171]:
+              - generic [ref=e172]:
+                - radio "No" [checked]
+                - generic [ref=e173] [cursor=pointer]: "No"
+              - generic [ref=e177]:
+                - radio "Yes"
+                - generic [ref=e178] [cursor=pointer]: "Yes"
+      - group [ref=e182]:
+        - generic [ref=e183]:
+          - generic [ref=e184]:
+            - generic [ref=e185]: "5"
+            - text: Specific Add-ons & Bundles Needed
+          - generic [ref=e186]: Optional specialized add-ons for your deployment
+        - generic [ref=e187]:
+          - generic [ref=e188]:
+            - generic [ref=e189]:
+              - generic [ref=e190]: Select Standalone Module Add-ons
+              - generic [ref=e191]: Optional
+            - generic [ref=e192]: Select any standalone modules or extensions required for your deployment.
+          - generic [ref=e282]:
+            - generic [ref=e283] [cursor=pointer]:
+              - generic [ref=e284]:
+                - checkbox "SPSS Amos Structural Equation Modeling & Path Analysis (Windows Desktop)" [ref=e285]
+                - generic [ref=e286]: SPSS Amos
+              - generic [ref=e287]: Structural Equation Modeling & Path Analysis (Windows Desktop)
+            - generic [ref=e288] [cursor=pointer]:
+              - generic [ref=e289]:
+                - checkbox "Custom Tables Interactive drag-and-drop presentation tables & summary matrices" [ref=e290]
+                - generic [ref=e291]: Custom Tables
+              - generic [ref=e292]: Interactive drag-and-drop presentation tables & summary matrices
+            - generic [ref=e293] [cursor=pointer]:
+              - generic [ref=e294]:
+                - checkbox "Advanced Statistics GLM, MANOVA, Bayesian, Linear Mixed Models, Kaplan-Meier" [ref=e295]
+                - generic [ref=e296]: Advanced Statistics
+              - generic [ref=e297]: GLM, MANOVA, Bayesian, Linear Mixed Models, Kaplan-Meier
+            - generic [ref=e298] [cursor=pointer]:
+              - generic [ref=e299]:
+                - checkbox "Forecasting ARIMA, Expert Modeler, Temporal Causal Modeling & Seasonal Trends" [ref=e300]
+                - generic [ref=e301]: Forecasting
+              - generic [ref=e302]: ARIMA, Expert Modeler, Temporal Causal Modeling & Seasonal Trends
+            - generic [ref=e303] [cursor=pointer]:
+              - generic [ref=e304]:
+                - checkbox "Decision Trees CHAID, Exhaustive CHAID, C&RT, and QUEST tree algorithms" [ref=e305]
+                - generic [ref=e306]: Decision Trees
+              - generic [ref=e307]: CHAID, Exhaustive CHAID, C&RT, and QUEST tree algorithms
+            - generic [ref=e308] [cursor=pointer]:
+              - generic [ref=e309]:
+                - checkbox "Complex Samples Multi-stage sample designs, stratified sampling, and Exact Tests" [ref=e310]
+                - generic [ref=e311]: Complex Samples
+              - generic [ref=e312]: Multi-stage sample designs, stratified sampling, and Exact Tests
+            - generic [ref=e313] [cursor=pointer]:
+              - generic [ref=e314]:
+                - checkbox "Missing Values Patterns analysis, multiple imputation, and EM estimations" [ref=e315]
+                - generic [ref=e316]: Missing Values
+              - generic [ref=e317]: Patterns analysis, multiple imputation, and EM estimations
+            - generic [ref=e318] [cursor=pointer]:
+              - generic [ref=e319]:
+                - checkbox "Categories Correspondence analysis, multidimensional scaling, CATPCA" [ref=e320]
+                - generic [ref=e321]: Categories
+              - generic [ref=e322]: Correspondence analysis, multidimensional scaling, CATPCA
+            - generic [ref=e323] [cursor=pointer]:
+              - generic [ref=e324]:
+                - checkbox "Neural Networks Multilayer perceptron and radial basis function models" [ref=e325]
+                - generic [ref=e326]: Neural Networks
+              - generic [ref=e327]: Multilayer perceptron and radial basis function models
+            - generic [ref=e328] [cursor=pointer]:
+              - generic [ref=e329]:
+                - checkbox "Other Module Specify any custom modules or specialized tools" [ref=e330]
+                - generic [ref=e331]: Other Module
+              - generic [ref=e332]: Specify any custom modules or specialized tools
+      - group [ref=e214]:
+        - generic [ref=e215]:
+          - generic [ref=e216]:
+            - generic [ref=e217]: "6"
+            - text: Additional Requirements & Comments
+          - generic [ref=e218]: Optional timeline, existing agreements, or special requests
+        - generic [ref=e220]:
+          - generic [ref=e221]:
+            - generic [ref=e222]: Comments, Target Timeline, or Existing IBM Customer Number
+            - generic [ref=e223]: Optional
+          - textbox "Comments, Target Timeline, or Existing IBM Customer Number Optional" [ref=e224]:
+            - /placeholder: Please share any specific requirements, timing constraints (e.g. Q1 rollout), existing licensing details, or questions...
+      - generic [ref=e225]:
+        - button "Clear Form" [ref=e226] [cursor=pointer]
+        - button "Generate Quote Request" [ref=e230] [cursor=pointer]
+  - dialog "Quote Request Generated!":
+    - generic:
+      - generic:
+        - generic: Quote Request Generated!
+        - button "Close modal"
+      - generic:
+        - generic:
+          - text: Your default email application is opening with the formatted quote details. If your email client does not open automatically, you can copy the text below or use the Outlook Web shortcut to send it to
+          - strong: averywiley@ibm.com
+          - text: .
+        - paragraph: "Email Subject:"
+        - paragraph: "Email Body Preview:"
+      - generic:
+        - button "Copy Text"
+        - link "Outlook Web":
+          - /url: "#"
+        - link "Open Email App":
+          - /url: "#"
+  - status:
+    - generic: Email copied to clipboard!
+  - contentinfo [ref=e234]:
+    - generic [ref=e235]:
+      - paragraph [ref=e237]: © 2026 International Business Machines Corporation. IBM, the IBM logo, and SPSS are trademarks of IBM Corp.
+      - list [ref=e238]:
+        - listitem [ref=e239]:
+          - link "Privacy" [ref=e240] [cursor=pointer]:
+            - /url: "#"
+        - listitem [ref=e241]:
+          - link "Terms of Use" [ref=e242] [cursor=pointer]:
+            - /url: "#"
+        - listitem [ref=e243]:
+          - link "SPSS Documentation" [ref=e244] [cursor=pointer]:
+            - /url: "#"
+        - listitem [ref=e245]:
+          - link "Support" [ref=e246] [cursor=pointer]:
+            - /url: "#"

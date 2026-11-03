@@ -1,0 +1,254 @@
+- generic [ref=e1]:
+  - navigation "Main Navigation" [ref=e2]:
+    - generic [ref=e3]:
+      - link "IBM Homepage" [ref=e5] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=e8]: SPSS® Statistics
+      - link "Request Quote" [ref=e10] [cursor=pointer]:
+        - /url: "#quote-form-section"
+  - generic [ref=e14]:
+    - generic [ref=e15]: IBM SPSS STATISTICS • ENTERPRISE QUOTING
+    - heading "Request an SPSS Quote. Smarter data. Better decisions." [level=1] [ref=e17]
+    - paragraph [ref=e18]: Planning a renewal, expansion, or new purchase? Complete the structured form below to instantly generate an official quote request email directly to your IBM representative.
+    - region "SPSS Pricing Update" [ref=e19]:
+      - generic [aria-hidden] [ref=e20]: 📈
+      - generic [ref=e21]:
+        - strong [ref=e22]:
+          - text: SPSS Pricing Update
+          - generic [ref=e23]: January 2027
+        - paragraph [ref=e24]: SPSS pricing is scheduled to increase in January 2027. If you are considering a renewal, expansion, or new purchase, submit your request today to lock in current pricing with your IBM representative.
+  - main [ref=e25]:
+    - generic [ref=e27]:
+      - group [ref=e28]:
+        - generic [ref=e29]:
+          - generic [ref=e30]:
+            - generic [ref=e31]: "1"
+            - text: Customer & Contact Information
+          - generic [ref=e32]: Required for quote generation & routing
+        - generic [ref=e34]:
+          - generic [ref=e35]:
+            - generic [ref=e36]: Full Name *
+            - textbox "Full Name" [ref=e38]:
+              - /placeholder: e.g. Jane Doe
+              - text: Jane Smith
+          - generic [ref=e39]:
+            - generic [ref=e40]: Company / Organization *
+            - textbox "Company / Organization" [ref=e42]:
+              - /placeholder: e.g. Acme Health Corp
+              - text: Stanford University
+          - generic [ref=e43]:
+            - generic [ref=e44]: Work Email Address *
+            - textbox "Work Email Address" [ref=e46]:
+              - /placeholder: jane.doe@company.com
+              - text: jsmith@stanford.edu
+          - generic [ref=e47]:
+            - generic [ref=e48]: Country / Region *
+            - textbox "Country / Region" [ref=e50]:
+              - /placeholder: e.g. United States, Canada, UK
+              - text: United States
+      - group [ref=e51]:
+        - generic [ref=e52]:
+          - generic [ref=e53]:
+            - generic [ref=e54]: "2"
+            - text: Licensing Model & Request Type
+          - generic [ref=e55]: Choose your deployment and agreement structure
+        - generic [ref=e56]:
+          - generic [ref=e57]:
+            - generic [ref=e58]: Request Type *
+            - generic [ref=e60]: Select the nature of your quote inquiry.
+          - generic [ref=e61]:
+            - generic [ref=e62]:
+              - radio "New Purchase Procuring new SPSS licenses" [checked]
+              - generic [ref=e63] [cursor=pointer]:
+                - generic [ref=e64]: New Purchase
+                - generic [ref=e67]: Procuring new SPSS licenses
+            - generic [ref=e68]:
+              - radio "Renewal Renewing active support / subscription"
+              - generic [ref=e69] [cursor=pointer]:
+                - generic [ref=e70]: Renewal
+                - generic [ref=e73]: Renewing active support / subscription
+            - generic [ref=e74]:
+              - radio "Expansion Adding seats or upgrading tiers"
+              - generic [ref=e75] [cursor=pointer]:
+                - generic [ref=e76]: Expansion
+                - generic [ref=e79]: Adding seats or upgrading tiers
+            - generic [ref=e80]:
+              - radio "Not Sure Explore options with rep"
+              - generic [ref=e81] [cursor=pointer]:
+                - generic [ref=e82]: Not Sure
+                - generic [ref=e85]: Explore options with rep
+        - generic [ref=e86]:
+          - generic [ref=e87]:
+            - generic [ref=e88]: License Model *
+            - generic [ref=e90]: Choose between flexible cloud-managed subscription or traditional perpetual licensing.
+          - generic [ref=e91]:
+            - generic [ref=e92]:
+              - radio "Digital Subscription Cloud-managed monthly or annual desktop access. Includes Base Edition with optional add-on modules." [checked]
+              - generic [ref=e93] [cursor=pointer]:
+                - generic [ref=e94]: Digital Subscription
+                - generic [ref=e97]: Cloud-managed monthly or annual desktop access. Includes Base Edition with optional add-on modules.
+            - generic [ref=e98]:
+              - radio "Subscription License Annual on-premises subscription with full support and software updates. Includes the same tiered packages (Base, Standard, Professional, Premium) as perpetual without permanent ownership."
+              - generic [ref=e99] [cursor=pointer]:
+                - generic [ref=e100]: Subscription License
+                - generic [ref=e103]: Annual on-premises subscription with full support and software updates. Includes the same tiered packages (Base, Standard, Professional, Premium) as perpetual without permanent ownership.
+            - generic [ref=e104]:
+              - radio "Perpetual License Permanent on-premises license ownership available in 4 tiered editions with 1 full year of support included."
+              - generic [ref=e105] [cursor=pointer]:
+                - generic [ref=e106]: Perpetual License
+                - generic [ref=e109]: Permanent on-premises license ownership available in 4 tiered editions with 1 full year of support included.
+        - generic [ref=e111]:
+          - generic [ref=e112]: Deployment / Seat Type
+          - combobox "Deployment / Seat Type" [ref=e114] [cursor=pointer]:
+            - option "Authorized User (Single Named User)" [selected]
+            - option "Concurrent User (Floating / Network License)"
+            - option "Not Sure / Recommend Best Option"
+      - group [ref=e115]:
+        - generic [ref=e116]:
+          - generic [ref=e117]:
+            - generic [ref=e118]: "3"
+            - text: SPSS Statistics Edition / Tier
+          - generic [ref=e119]: Digital Subscription Base (customizable via Add-ons in Section 5)
+        - generic [ref=e120]:
+          - generic [ref=e121]:
+            - generic [ref=e122]: Select Edition *
+            - generic [ref=e124]: Digital subscriptions include SPSS Base Edition. Select specialized capabilities in Section 5.
+          - generic [ref=e125]:
+            - generic [ref=e126]:
+              - radio "Base Edition Core descriptive stats, data prep, linear regression, charting, bootstrapping, and Python/R programmability." [checked]
+              - generic [ref=e127] [cursor=pointer]:
+                - generic [ref=e128]: Base Edition
+                - generic [ref=e131]: Core descriptive stats, data prep, linear regression, charting, bootstrapping, and Python/R programmability.
+            - generic [ref=e132]:
+              - radio "Not Sure Help me choose based on our analytical requirements."
+              - generic [ref=e133] [cursor=pointer]:
+                - generic [ref=e134]: Not Sure
+                - generic [ref=e137]: Help me choose based on our analytical requirements.
+          - generic [ref=e138]:
+            - strong [ref=e139]: "Digital Subscription Note:"
+            - text: Digital subscription packages include the
+            - strong [ref=e140]: SPSS Base Edition
+            - text: . To add specialized capabilities (such as Custom Tables, Advanced Stats, Forecasting, Decision Trees, or Amos), simply check the add-on modules you need in
+            - strong [ref=e141]: Section 5
+            - text: below.
+      - group [ref=e142]:
+        - generic [ref=e143]:
+          - generic [ref=e144]:
+            - generic [ref=e145]: "4"
+            - text: Users & Institution Context
+          - generic [ref=e146]: Capacity, academic status, and existing account identification
+        - generic [ref=e147]:
+          - generic [ref=e148]:
+            - generic [ref=e149]:
+              - generic [ref=e150]: Number of Users / Seats *
+              - spinbutton "Number of Users / Seats *" [ref=e152]: "1"
+            - generic [ref=e153]:
+              - generic [ref=e154]: Academic / University Institution? *
+              - generic [ref=e156]:
+                - generic [ref=e157]:
+                  - radio "No (Commercial)"
+                  - generic [ref=e158] [cursor=pointer]: No (Commercial)
+                - generic [ref=e162]:
+                  - radio "Yes (Academic)" [checked]
+                  - generic [ref=e163] [cursor=pointer]: Yes (Academic)
+          - generic [ref=e167]:
+            - generic [ref=e168]:
+              - generic [ref=e169]: Do you have an existing IBM Customer Number (ICN)?
+              - generic [ref=e171]:
+                - generic [ref=e172]:
+                  - radio "No"
+                  - generic [ref=e173] [cursor=pointer]: "No"
+                - generic [ref=e177]:
+                  - radio "Yes" [checked]
+                  - generic [ref=e178] [cursor=pointer]: "Yes"
+            - generic [ref=e333]:
+              - generic [ref=e334]: "Please provide your IBM Customer Number (ICN):"
+              - textbox "IBM Customer Number" [ref=e335]:
+                - /placeholder: e.g. 01234567 or account number
+                - text: ICN-987654
+      - group [ref=e182]:
+        - generic [ref=e183]:
+          - generic [ref=e184]:
+            - generic [ref=e185]: "5"
+            - text: Specific Add-ons & Bundles Needed
+          - generic [ref=e186]: Optional specialized add-ons for your deployment
+        - generic [ref=e187]:
+          - generic [ref=e188]:
+            - generic [ref=e189]:
+              - generic [ref=e190]: Select Digital Add-on Modules
+              - generic [ref=e191]: Optional
+            - generic [ref=e192]: Select from the specialized add-on modules for Digital Subscription.
+          - generic [ref=e193]:
+            - generic [ref=e194] [cursor=pointer]:
+              - generic [ref=e195]:
+                - checkbox "Custom tables and advanced statistics users Advanced statistical analysis, GLM, GLMM, Bayesian, Survival, and Custom Presentation Tables" [checked] [ref=e196]
+                - generic [ref=e197]: Custom tables and advanced statistics users
+              - generic [ref=e198]: Advanced statistical analysis, GLM, GLMM, Bayesian, Survival, and Custom Presentation Tables
+            - generic [ref=e199] [cursor=pointer]:
+              - generic [ref=e200]:
+                - checkbox "Forecasting and decision trees users ARIMA, Exponential Smoothing, Expert Modeler, and tree algorithms (CHAID, C&RT, QUEST)" [ref=e201]
+                - generic [ref=e202]: Forecasting and decision trees users
+              - generic [ref=e203]: ARIMA, Exponential Smoothing, Expert Modeler, and tree algorithms (CHAID, C&RT, QUEST)
+            - generic [ref=e204] [cursor=pointer]:
+              - generic [ref=e205]:
+                - checkbox "Complex sampling and testing users Multi-stage sample designs, stratified sampling, and Exact Tests for small sample sizes" [ref=e206]
+                - generic [ref=e207]: Complex sampling and testing users
+              - generic [ref=e208]: Multi-stage sample designs, stratified sampling, and Exact Tests for small sample sizes
+            - generic [ref=e209] [cursor=pointer]:
+              - generic [ref=e210]:
+                - checkbox "SPSS Amos Structural Equation Modeling (SEM), path analysis, and CFA (Windows Desktop)" [ref=e211]
+                - generic [ref=e212]: SPSS Amos
+              - generic [ref=e213]: Structural Equation Modeling (SEM), path analysis, and CFA (Windows Desktop)
+      - group [ref=e214]:
+        - generic [ref=e215]:
+          - generic [ref=e216]:
+            - generic [ref=e217]: "6"
+            - text: Additional Requirements & Comments
+          - generic [ref=e218]: Optional timeline, existing agreements, or special requests
+        - generic [ref=e220]:
+          - generic [ref=e221]:
+            - generic [ref=e222]: Comments, Target Timeline, or Existing IBM Customer Number
+            - generic [ref=e223]: Optional
+          - textbox "Comments, Target Timeline, or Existing IBM Customer Number Optional" [ref=e224]:
+            - /placeholder: Please share any specific requirements, timing constraints (e.g. Q1 rollout), existing licensing details, or questions...
+      - generic [ref=e225]:
+        - button "Clear Form" [ref=e226] [cursor=pointer]
+        - button "Generate Quote Request" [active] [ref=e230] [cursor=pointer]
+  - dialog [ref=e336]:
+    - generic [ref=e337]:
+      - generic [ref=e338]:
+        - generic [ref=e339]: Quote Request Generated!
+        - button "Close modal" [ref=e342] [cursor=pointer]
+      - generic [ref=e345]:
+        - generic [ref=e346]:
+          - text: Your default email application is opening with the formatted quote details. If your email client does not open automatically, you can copy the text below or use the Outlook Web shortcut to send it to
+          - strong [ref=e347]: averywiley@ibm.com
+          - text: .
+        - paragraph [ref=e348]: "Email Subject:"
+        - generic [ref=e349]: SPSS Quote Request - Stanford University
+        - paragraph [ref=e350]: "Email Body Preview:"
+        - generic [ref=e351]: "Hello, I would like to request an official quote for IBM SPSS Statistics with the following specifications: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1. CUSTOMER & CONTACT INFORMATION ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ • Full Name: Jane Smith • Organization: Stanford University • Work Email: jsmith@stanford.edu • Country / Region: United States ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2. LICENSING & DEPLOYMENT MODEL ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ • Request Type: New Purchase • License Model: Digital Subscription • Deployment Type: Authorized User (Single Named User) ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3. SPSS EDITION & CAPACITY ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ • Edition / Tier: Base Edition • Number of Users: 1 Seat(s) • Academic Instit.: Yes (Academic / University Pricing) • Customer Number: ICN-987654 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4. MODULES & SPECIFIC ADD-ONS ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ • Selected Add-ons: Custom Tables & Advanced Statistics users • Additional Notes: None ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Please contact me regarding official pricing, licensing options, and next steps. Thank you, Jane Smith Stanford University"
+      - generic [ref=e352]:
+        - button "Copy Text" [ref=e353] [cursor=pointer]
+        - link "Outlook Web" [ref=e357] [cursor=pointer]:
+          - /url: https://outlook.office.com/mail/deeplink/compose?to=averywiley%40ibm.com&subject=SPSS%20Quote%20Request%20-%20Stanford%20University&body=Hello%2C%0A%0AI%20would%20like%20to%20request%20an%20official%20quote%20for%20IBM%20SPSS%20Statistics%20with%20the%20following%20specifications%3A%0A%0A%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%0A1.%20CUSTOMER%20%26%20CONTACT%20INFORMATION%0A%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%0A%E2%80%A2%20Full%20Name%3A%20%20%20%20%20%20%20%20Jane%20Smith%0A%E2%80%A2%20Organization%3A%20%20%20%20%20Stanford%20University%0A%E2%80%A2%20Work%20Email%3A%20%20%20%20%20%20%20jsmith%40stanford.edu%0A%E2%80%A2%20Country%20%2F%20Region%3A%20United%20States%0A%0A%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%0A2.%20LICENSING%20%26%20DEPLOYMENT%20MODEL%0A%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%0A%E2%80%A2%20Request%20Type%3A%20%20%20%20%20New%20Purchase%0A%E2%80%A2%20License%20Model%3A%20%20%20%20Digital%20Subscription%0A%E2%80%A2%20Deployment%20Type%3A%20%20Authorized%20User%20(Single%20Named%20User)%0A%0A%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%0A3.%20SPSS%20EDITION%20%26%20CAPACITY%0A%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%0A%E2%80%A2%20Edition%20%2F%20Tier%3A%20%20%20Base%20Edition%0A%E2%80%A2%20Number%20of%20Users%3A%20%201%20Seat(s)%0A%E2%80%A2%20Academic%20Instit.%3A%20Yes%20(Academic%20%2F%20University%20Pricing)%0A%E2%80%A2%20Customer%20Number%3A%20%20ICN-987654%0A%0A%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%0A4.%20MODULES%20%26%20SPECIFIC%20ADD-ONS%0A%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%0A%E2%80%A2%20Selected%20Add-ons%3A%20Custom%20Tables%20%26%20Advanced%20Statistics%20users%0A%E2%80%A2%20Additional%20Notes%3A%20None%0A%0A%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%0A%0APlease%20contact%20me%20regarding%20official%20pricing%2C%20licensing%20options%2C%20and%20next%20steps.%0A%0AThank%20you%2C%0AJane%20Smith%0AStanford%20University
+        - link "Open Email App" [ref=e360] [cursor=pointer]:
+          - /url: mailto:averywiley%40ibm.com?subject=SPSS%20Quote%20Request%20-%20Stanford%20University&body=Hello%2C%0A%0AI%20would%20like%20to%20request%20an%20official%20quote%20for%20IBM%20SPSS%20Statistics%20with%20the%20following%20specifications%3A%0A%0A%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%0A1.%20CUSTOMER%20%26%20CONTACT%20INFORMATION%0A%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%0A%E2%80%A2%20Full%20Name%3A%20%20%20%20%20%20%20%20Jane%20Smith%0A%E2%80%A2%20Organization%3A%20%20%20%20%20Stanford%20University%0A%E2%80%A2%20Work%20Email%3A%20%20%20%20%20%20%20jsmith%40stanford.edu%0A%E2%80%A2%20Country%20%2F%20Region%3A%20United%20States%0A%0A%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%0A2.%20LICENSING%20%26%20DEPLOYMENT%20MODEL%0A%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%0A%E2%80%A2%20Request%20Type%3A%20%20%20%20%20New%20Purchase%0A%E2%80%A2%20License%20Model%3A%20%20%20%20Digital%20Subscription%0A%E2%80%A2%20Deployment%20Type%3A%20%20Authorized%20User%20(Single%20Named%20User)%0A%0A%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%0A3.%20SPSS%20EDITION%20%26%20CAPACITY%0A%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%0A%E2%80%A2%20Edition%20%2F%20Tier%3A%20%20%20Base%20Edition%0A%E2%80%A2%20Number%20of%20Users%3A%20%201%20Seat(s)%0A%E2%80%A2%20Academic%20Instit.%3A%20Yes%20(Academic%20%2F%20University%20Pricing)%0A%E2%80%A2%20Customer%20Number%3A%20%20ICN-987654%0A%0A%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%0A4.%20MODULES%20%26%20SPECIFIC%20ADD-ONS%0A%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%0A%E2%80%A2%20Selected%20Add-ons%3A%20Custom%20Tables%20%26%20Advanced%20Statistics%20users%0A%E2%80%A2%20Additional%20Notes%3A%20None%0A%0A%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%0A%0APlease%20contact%20me%20regarding%20official%20pricing%2C%20licensing%20options%2C%20and%20next%20steps.%0A%0AThank%20you%2C%0AJane%20Smith%0AStanford%20University
+  - status:
+    - generic: Email copied to clipboard!
+  - contentinfo [ref=e234]:
+    - generic [ref=e235]:
+      - paragraph [ref=e237]: © 2026 International Business Machines Corporation. IBM, the IBM logo, and SPSS are trademarks of IBM Corp.
+      - list [ref=e238]:
+        - listitem [ref=e239]:
+          - link "Privacy" [ref=e240] [cursor=pointer]:
+            - /url: "#"
+        - listitem [ref=e241]:
+          - link "Terms of Use" [ref=e242] [cursor=pointer]:
+            - /url: "#"
+        - listitem [ref=e243]:
+          - link "SPSS Documentation" [ref=e244] [cursor=pointer]:
+            - /url: "#"
+        - listitem [ref=e245]:
+          - link "Support" [ref=e246] [cursor=pointer]:
+            - /url: "#"

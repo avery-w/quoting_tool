@@ -1161,34 +1161,17 @@
             </div>
           </div>
 
-          <!-- Deployment & Billing Details Card -->
+          <!-- Deployment Details Card -->
           <div class="field-card">
-            <div class="grid-2">
-              
-              <!-- Deployment Type -->
-              <div class="form-group" id="group-deployment">
-                <label for="deploymentType">
-                  <span>Deployment / Seat Type</span>
-                </label>
-                <select id="deploymentType" name="deploymentType">
-                  <option value="Authorized User (Single Named User)" selected>Authorized User (Single Named User)</option>
-                  <option value="Concurrent User (Floating / Network License)">Concurrent User (Floating / Network License)</option>
-                  <option value="Not Sure">Not Sure / Recommend Best Option</option>
-                </select>
-              </div>
-
-              <!-- Billing Cadence -->
-              <div class="form-group" id="group-billing">
-                <label for="billingCadence">
-                  <span>Billing Preference</span>
-                </label>
-                <select id="billingCadence" name="billingCadence">
-                  <option value="Annual Upfront (Standard / Discounted)" selected>Annual Upfront (Standard / Discounted)</option>
-                  <option value="Monthly (Digital Subscription Only)">Monthly (Subscription Only)</option>
-                  <option value="Multi-Year Agreement">Multi-Year Agreement</option>
-                </select>
-              </div>
-
+            <div class="form-group" id="group-deployment">
+              <label for="deploymentType">
+                <span>Deployment / Seat Type</span>
+              </label>
+              <select id="deploymentType" name="deploymentType">
+                <option value="Authorized User (Single Named User)" selected>Authorized User (Single Named User)</option>
+                <option value="Concurrent User (Floating / Network License)">Concurrent User (Floating / Network License)</option>
+                <option value="Not Sure">Not Sure / Recommend Best Option</option>
+              </select>
             </div>
           </div>
 
@@ -1278,23 +1261,23 @@
 
             <!-- Dynamic notice for Subscription -->
             <div id="subEditionNotice" class="edition-notice">
-              <strong>Digital Subscription Note:</strong> Digital subscription packages include the <strong>SPSS Base Edition</strong>. To add specialized capabilities (such as Custom Tables, Advanced Stats, Forecasting, Decision Trees, or Amos), simply check the add-on modules you need in <strong>Section 5</strong> below.
+              <strong>Digital Subscription Note:</strong> Digital subscription packages include the <strong>SPSS Base Edition</strong>. To add specialized capabilities (such as Custom Tables, Advanced Stats, Forecasting, or Decision Trees), simply check the add-on modules you need in <strong>Section 5</strong> below.
             </div>
           </div>
         </fieldset>
 
-        <!-- SECTION 4: USERS, ENVIRONMENT & INDUSTRY -->
+        <!-- SECTION 4: USERS & INSTITUTION CONTEXT -->
         <fieldset class="form-section">
           <div class="section-header">
             <legend class="section-title">
               <span class="section-num">4</span>
-              Users, Environment & Industry
+              Users & Institution Context
             </legend>
-            <span class="section-subtext">Capacity and industry-specific pricing context</span>
+            <span class="section-subtext">Capacity, academic status, and existing account identification</span>
           </div>
 
           <div class="field-card">
-            <div class="grid-3">
+            <div class="grid-2">
               
               <!-- 8. Number of Users -->
               <div class="form-group" id="group-users">
@@ -1305,44 +1288,40 @@
                 <span class="error-text">Please specify a valid number of users (minimum 1).</span>
               </div>
 
-              <!-- Operating System -->
-              <div class="form-group" id="group-os">
-                <label for="operatingSystem">
-                  <span>Primary OS</span>
+              <!-- Academic / University? Dropdown -->
+              <div class="form-group" id="group-academic">
+                <label for="isAcademic">
+                  <span>Academic / University Institution? <span class="required-tag">*</span></span>
                 </label>
-                <select id="operatingSystem" name="operatingSystem">
-                  <option value="Windows" selected>Windows</option>
-                  <option value="macOS">macOS</option>
-                  <option value="Both Windows & macOS">Both Windows & macOS</option>
+                <select id="isAcademic" name="isAcademic">
+                  <option value="No" selected>No (Commercial / Enterprise)</option>
+                  <option value="Yes">Yes (Academic / University)</option>
                 </select>
-              </div>
-
-              <!-- 9. Industry -->
-              <div class="form-group" id="group-industry">
-                <label for="industry">
-                  <span>Industry Sector <span class="required-tag">*</span></span>
-                </label>
-                <select id="industry" name="industry" required>
-                  <option value="" disabled selected>Select industry...</option>
-                  <option value="Banking & Financial Services">Banking & Financial Services</option>
-                  <option value="Insurance">Insurance</option>
-                  <option value="Healthcare & Life Sciences">Healthcare & Life Sciences</option>
-                  <option value="Government & Public Sector">Government & Public Sector</option>
-                  <option value="Education / Higher Ed / Academic">Education / Higher Ed / Academic</option>
-                  <option value="Retail & Consumer Goods">Retail & Consumer Goods</option>
-                  <option value="Telecommunications">Telecommunications</option>
-                  <option value="Market Research & Consulting">Market Research & Consulting</option>
-                  <option value="Other">Other (Please specify)</option>
-                </select>
-                <span class="error-text">Please select an industry.</span>
               </div>
 
             </div>
 
-            <!-- Dynamic Other Industry -->
-            <div id="industryOtherWrapper" class="other-input-container">
-              <input type="text" id="industryOther" placeholder="Specify your industry or organization type..." aria-label="Specify industry">
+            <!-- Existing Customer Number Section Dropdown -->
+            <div style="margin-top: 22px; padding-top: 20px; border-top: 1px solid var(--border-light);">
+              <div class="form-group" id="group-customer-number">
+                <label for="hasCustomerNumber">
+                  <span>Do you have an existing IBM Customer Number?</span>
+                </label>
+                <select id="hasCustomerNumber" name="hasCustomerNumber" style="max-width: 320px;">
+                  <option value="No" selected>No</option>
+                  <option value="Yes">Yes</option>
+                </select>
+              </div>
+
+              <!-- Dynamic Customer Number Input -->
+              <div id="customerNumberWrapper" class="other-input-container" style="margin-top: 14px;">
+                <label for="customerNumber" style="font-size: 13px; font-weight: 600; color: var(--text-heading); display: block; margin-bottom: 6px;">
+                  Please provide your IBM Customer Number:
+                </label>
+                <input type="text" id="customerNumber" name="customerNumber" placeholder="e.g. 01234567 or account number" aria-label="IBM Customer Number">
+              </div>
             </div>
+
           </div>
         </fieldset>
 
@@ -1353,115 +1332,188 @@
               <span class="section-num">5</span>
               Specific Add-ons & Bundles Needed
             </legend>
-            <span class="section-subtext">Optional standalone modules and specialized extensions</span>
+            <span class="section-subtext" id="addonsSectionSubtext">Optional specialized add-ons for your deployment</span>
           </div>
 
           <div class="field-card">
             <div class="field-card-header">
               <div class="field-card-title">
-                <span>Select Specific Add-on Modules</span>
+                <span id="addonsFieldTitle">Select Add-on Modules</span>
                 <span class="optional-tag">Optional</span>
               </div>
-              <div class="field-card-desc">Select any specialized modules required (for Subscription Add-ons or Traditional Module Add-ons).</div>
+              <div class="field-card-desc" id="addonsFieldDesc">Select any specialized modules or user bundles required.</div>
             </div>
 
-            <div class="checkbox-grid">
+            <!-- 1. Digital Subscription 4 Add-ons Grid -->
+            <div class="checkbox-grid" id="digitalAddonsGrid">
               
-              <!-- Amos -->
-              <label class="checkbox-card" for="prod-amos">
+              <!-- Custom tables and advanced statistics users -->
+              <label class="checkbox-card" for="prod-dig-tables">
                 <div class="checkbox-card-top">
-                  <input type="checkbox" id="prod-amos" name="additionalProducts" value="SPSS Amos (Structural Equation Modeling)">
-                  <span class="checkbox-title">SPSS Amos</span>
+                  <input type="checkbox" id="prod-dig-tables" name="additionalProductsDigital" value="Custom Tables & Advanced Statistics users">
+                  <span class="checkbox-title">Custom tables and advanced statistics users</span>
                 </div>
-                <span class="checkbox-sub">Structural Equation Modeling & Path Analysis (Windows Desktop)</span>
+                <span class="checkbox-sub">Advanced statistical analysis, GLM, GLMM, Bayesian, Survival, and Custom Presentation Tables</span>
               </label>
 
-              <!-- Custom Tables -->
-              <label class="checkbox-card" for="prod-tables">
+              <!-- Forecasting and decision trees users -->
+              <label class="checkbox-card" for="prod-dig-forecast">
                 <div class="checkbox-card-top">
-                  <input type="checkbox" id="prod-tables" name="additionalProducts" value="Custom Tables & Advanced Statistics">
-                  <span class="checkbox-title">Custom Tables</span>
+                  <input type="checkbox" id="prod-dig-forecast" name="additionalProductsDigital" value="Forecasting & Decision Trees users">
+                  <span class="checkbox-title">Forecasting and decision trees users</span>
                 </div>
-                <span class="checkbox-sub">Interactive drag-and-drop presentation tables & summary matrices</span>
+                <span class="checkbox-sub">ARIMA, Exponential Smoothing, Expert Modeler, and tree algorithms (CHAID, C&RT, QUEST)</span>
               </label>
 
-              <!-- Advanced Statistics -->
+              <!-- Complex sampling and testing users -->
+              <label class="checkbox-card" for="prod-dig-complex">
+                <div class="checkbox-card-top">
+                  <input type="checkbox" id="prod-dig-complex" name="additionalProductsDigital" value="Complex Sampling & Testing users">
+                  <span class="checkbox-title">Complex sampling and testing users</span>
+                </div>
+                <span class="checkbox-sub">Multi-stage sample designs, stratified sampling, and Exact Tests for small sample sizes</span>
+              </label>
+
+            </div>
+
+            <!-- 2. Subscription License & Perpetual Full Modules Grid (Hidden by default when Digital is selected) -->
+            <div class="checkbox-grid" id="standaloneAddonsGrid" style="display: none;">
+              
+              <!-- 1. Data Preparation -->
+              <label class="checkbox-card" for="prod-dataprep">
+                <div class="checkbox-card-top">
+                  <input type="checkbox" id="prod-dataprep" name="additionalProducts" value="Data Preparation">
+                  <span class="checkbox-title">Data Preparation</span>
+                </div>
+                <span class="checkbox-sub">Identify unusual cases, validate data rules, anomaly detection, and pre-analysis prep</span>
+              </label>
+
+              <!-- 2. Bootstrapping -->
+              <label class="checkbox-card" for="prod-bootstrap">
+                <div class="checkbox-card-top">
+                  <input type="checkbox" id="prod-bootstrap" name="additionalProducts" value="Bootstrapping">
+                  <span class="checkbox-title">Bootstrapping</span>
+                </div>
+                <span class="checkbox-sub">Resampling method for robust estimation of standard errors and confidence intervals</span>
+              </label>
+
+              <!-- 3. Advanced Statistics -->
               <label class="checkbox-card" for="prod-advstats">
                 <div class="checkbox-card-top">
-                  <input type="checkbox" id="prod-advstats" name="additionalProducts" value="Advanced Statistics (GLM, GLMM, Bayesian, Survival)">
+                  <input type="checkbox" id="prod-advstats" name="additionalProducts" value="Advanced Statistics">
                   <span class="checkbox-title">Advanced Statistics</span>
                 </div>
-                <span class="checkbox-sub">GLM, MANOVA, Bayesian, Linear Mixed Models, Kaplan-Meier</span>
+                <span class="checkbox-sub">GLM, GLMM, Bayesian statistics, linear mixed models, and survival analysis</span>
               </label>
 
-              <!-- Forecasting -->
-              <label class="checkbox-card" for="prod-forecast">
+              <!-- 4. Regression -->
+              <label class="checkbox-card" for="prod-regression">
                 <div class="checkbox-card-top">
-                  <input type="checkbox" id="prod-forecast" name="additionalProducts" value="Forecasting (ARIMA & Exponential Smoothing)">
-                  <span class="checkbox-title">Forecasting</span>
+                  <input type="checkbox" id="prod-regression" name="additionalProducts" value="Regression">
+                  <span class="checkbox-title">Regression</span>
                 </div>
-                <span class="checkbox-sub">ARIMA, Expert Modeler, Temporal Causal Modeling & Seasonal Trends</span>
+                <span class="checkbox-sub">Multinomial logistic, binary logistic, nonlinear regression, probit, and weighted least squares</span>
               </label>
 
-              <!-- Decision Trees -->
-              <label class="checkbox-card" for="prod-trees">
+              <!-- 5. Custom Tables -->
+              <label class="checkbox-card" for="prod-tables">
                 <div class="checkbox-card-top">
-                  <input type="checkbox" id="prod-trees" name="additionalProducts" value="Decision Trees (CHAID, C&RT, QUEST)">
-                  <span class="checkbox-title">Decision Trees</span>
+                  <input type="checkbox" id="prod-tables" name="additionalProducts" value="Custom Tables">
+                  <span class="checkbox-title">Custom Tables</span>
                 </div>
-                <span class="checkbox-sub">CHAID, Exhaustive CHAID, C&RT, and QUEST tree algorithms</span>
+                <span class="checkbox-sub">Interactive presentation tables, nested summaries, and multi-response category matrices</span>
               </label>
 
-              <!-- Complex Samples -->
-              <label class="checkbox-card" for="prod-complex">
-                <div class="checkbox-card-top">
-                  <input type="checkbox" id="prod-complex" name="additionalProducts" value="Complex Samples & Testing">
-                  <span class="checkbox-title">Complex Samples</span>
-                </div>
-                <span class="checkbox-sub">Multi-stage sample designs, stratified sampling, and Exact Tests</span>
-              </label>
-
-              <!-- Missing Values -->
+              <!-- 6. Missing Values -->
               <label class="checkbox-card" for="prod-missing">
                 <div class="checkbox-card-top">
-                  <input type="checkbox" id="prod-missing" name="additionalProducts" value="Missing Values & Imputation">
+                  <input type="checkbox" id="prod-missing" name="additionalProducts" value="Missing Values">
                   <span class="checkbox-title">Missing Values</span>
                 </div>
-                <span class="checkbox-sub">Patterns analysis, multiple imputation, and EM estimations</span>
+                <span class="checkbox-sub">Missing data pattern analysis, multiple imputation, and EM estimations</span>
               </label>
 
-              <!-- Categories -->
+              <!-- 7. Categories -->
               <label class="checkbox-card" for="prod-cat">
                 <div class="checkbox-card-top">
-                  <input type="checkbox" id="prod-cat" name="additionalProducts" value="Categories (Optimal Scaling / CATPCA)">
+                  <input type="checkbox" id="prod-cat" name="additionalProducts" value="Categories">
                   <span class="checkbox-title">Categories</span>
                 </div>
-                <span class="checkbox-sub">Correspondence analysis, multidimensional scaling, CATPCA</span>
+                <span class="checkbox-sub">Correspondence analysis, multidimensional scaling, perceptual maps, and CATPCA</span>
               </label>
 
-              <!-- Neural Networks -->
+              <!-- 8. Forecasting -->
+              <label class="checkbox-card" for="prod-forecast">
+                <div class="checkbox-card-top">
+                  <input type="checkbox" id="prod-forecast" name="additionalProducts" value="Forecasting">
+                  <span class="checkbox-title">Forecasting</span>
+                </div>
+                <span class="checkbox-sub">ARIMA, exponential smoothing, Expert Modeler, and seasonal trend modeling</span>
+              </label>
+
+              <!-- 9. Decision Trees -->
+              <label class="checkbox-card" for="prod-trees">
+                <div class="checkbox-card-top">
+                  <input type="checkbox" id="prod-trees" name="additionalProducts" value="Decision Trees">
+                  <span class="checkbox-title">Decision Trees</span>
+                </div>
+                <span class="checkbox-sub">CHAID, Exhaustive CHAID, C&RT, and QUEST tree algorithms for segmentation</span>
+              </label>
+
+              <!-- 10. Neural Networks -->
               <label class="checkbox-card" for="prod-neural">
                 <div class="checkbox-card-top">
                   <input type="checkbox" id="prod-neural" name="additionalProducts" value="Neural Networks">
                   <span class="checkbox-title">Neural Networks</span>
                 </div>
-                <span class="checkbox-sub">Multilayer perceptron and radial basis function models</span>
+                <span class="checkbox-sub">Multilayer perceptron (MLP) and radial basis function (RBF) predictive models</span>
               </label>
 
-              <!-- Other -->
-              <label class="checkbox-card" for="prod-other">
+              <!-- 11. Direct Marketing -->
+              <label class="checkbox-card" for="prod-directmktg">
                 <div class="checkbox-card-top">
-                  <input type="checkbox" id="prod-other" name="additionalProducts" value="Other">
-                  <span class="checkbox-title">Other Module</span>
+                  <input type="checkbox" id="prod-directmktg" name="additionalProducts" value="Direct Marketing">
+                  <span class="checkbox-title">Direct Marketing</span>
                 </div>
-                <span class="checkbox-sub">Specify any custom modules or specialized tools</span>
+                <span class="checkbox-sub">RFM analysis, cluster analysis, prospect profiling, and campaign response rate modeling</span>
               </label>
 
-            </div>
+              <!-- 12. Complex Samples -->
+              <label class="checkbox-card" for="prod-complex">
+                <div class="checkbox-card-top">
+                  <input type="checkbox" id="prod-complex" name="additionalProducts" value="Complex Samples">
+                  <span class="checkbox-title">Complex Samples</span>
+                </div>
+                <span class="checkbox-sub">Multi-stage sample designs, stratified sampling, cluster sampling, and weighted analysis</span>
+              </label>
 
-            <!-- Dynamic Other Product -->
-            <div id="productOtherWrapper" class="other-input-container">
-              <input type="text" id="productOther" placeholder="Specify additional product(s) or modules..." aria-label="Specify other products">
+              <!-- 13. Conjoint -->
+              <label class="checkbox-card" for="prod-conjoint">
+                <div class="checkbox-card-top">
+                  <input type="checkbox" id="prod-conjoint" name="additionalProducts" value="Conjoint">
+                  <span class="checkbox-title">Conjoint</span>
+                </div>
+                <span class="checkbox-sub">Full-profile conjoint analysis for product feature design, trade-offs, and pricing decisions</span>
+              </label>
+
+              <!-- 14. Exact Tests -->
+              <label class="checkbox-card" for="prod-exacttests">
+                <div class="checkbox-card-top">
+                  <input type="checkbox" id="prod-exacttests" name="additionalProducts" value="Exact Tests">
+                  <span class="checkbox-title">Exact Tests</span>
+                </div>
+                <span class="checkbox-sub">Small-sample and rare-occurrence testing without asymptotic distribution assumptions</span>
+              </label>
+
+              <!-- 15. SPSS Amos*** -->
+              <label class="checkbox-card" for="prod-amos">
+                <div class="checkbox-card-top">
+                  <input type="checkbox" id="prod-amos" name="additionalProducts" value="SPSS Amos*** (Windows, Desktop only)">
+                  <span class="checkbox-title">SPSS Amos***</span>
+                </div>
+                <span class="checkbox-sub">Structural Equation Modeling (SEM), path analysis, and CFA (Windows, Desktop only)</span>
+              </label>
+
             </div>
           </div>
         </fieldset>
@@ -1583,12 +1635,6 @@
 
       // Elements
       const form = document.getElementById('quoteForm');
-      const industrySelect = document.getElementById('industry');
-      const industryOtherWrapper = document.getElementById('industryOtherWrapper');
-      const industryOtherInput = document.getElementById('industryOther');
-      const prodOtherCheckbox = document.getElementById('prod-other');
-      const productOtherWrapper = document.getElementById('productOtherWrapper');
-      const productOtherInput = document.getElementById('productOther');
       const clearBtn = document.getElementById('clearBtn');
       const previewModal = document.getElementById('previewModal');
       const modalCloseBtn = document.getElementById('modalCloseBtn');
@@ -1609,6 +1655,30 @@
       const edStdRadio = document.getElementById('ed-std');
       const editionSectionSubtext = document.getElementById('editionSectionSubtext');
       const editionFieldDesc = document.getElementById('editionFieldDesc');
+
+      // Add-ons & Institution controls
+      const digitalAddonsGrid = document.getElementById('digitalAddonsGrid');
+      const standaloneAddonsGrid = document.getElementById('standaloneAddonsGrid');
+      const addonsFieldTitle = document.getElementById('addonsFieldTitle');
+      const addonsFieldDesc = document.getElementById('addonsFieldDesc');
+      const isAcademicSelect = document.getElementById('isAcademic');
+      const hasCustomerNumberSelect = document.getElementById('hasCustomerNumber');
+      const customerNumberWrapper = document.getElementById('customerNumberWrapper');
+      const customerNumberInput = document.getElementById('customerNumber');
+
+      function updateCustomerNumberVisibility() {
+        if (hasCustomerNumberSelect && hasCustomerNumberSelect.value === 'Yes') {
+          customerNumberWrapper.classList.add('visible');
+          customerNumberInput.focus();
+        } else if (customerNumberWrapper) {
+          customerNumberWrapper.classList.remove('visible');
+          customerNumberInput.value = '';
+        }
+      }
+
+      if (hasCustomerNumberSelect) {
+        hasCustomerNumberSelect.addEventListener('change', updateCustomerNumberVisibility);
+      }
 
       function updateEditionForLicenseType() {
         const digitalRadio = document.getElementById('lic-digital');
@@ -1634,6 +1704,12 @@
           if (currentEdition !== 'Base Edition' && currentEdition !== 'Not Sure / Recommend Tier') {
             edBaseRadio.checked = true;
           }
+
+          // Toggle Add-ons to Digital 3 options
+          if (digitalAddonsGrid) digitalAddonsGrid.style.display = 'grid';
+          if (standaloneAddonsGrid) standaloneAddonsGrid.style.display = 'none';
+          if (addonsFieldTitle) addonsFieldTitle.textContent = 'Select Digital Add-on Modules';
+          if (addonsFieldDesc) addonsFieldDesc.textContent = 'Select from the specialized add-on modules for Digital Subscription.';
         } else {
           // Subscription License (On-Premises), Perpetual License, or Not Sure: Show all 4 tiers
           perpetualOnlyCards.forEach(function(card) {
@@ -1648,6 +1724,12 @@
           if (editionFieldDesc) {
             editionFieldDesc.textContent = 'Select an all-in-one edition tier or Base foundation.';
           }
+
+          // Toggle Add-ons to Full Standalone options
+          if (digitalAddonsGrid) digitalAddonsGrid.style.display = 'none';
+          if (standaloneAddonsGrid) standaloneAddonsGrid.style.display = 'grid';
+          if (addonsFieldTitle) addonsFieldTitle.textContent = 'Select Standalone Module Add-ons';
+          if (addonsFieldDesc) addonsFieldDesc.textContent = 'Select any standalone modules or extensions required for your deployment.';
         }
       }
 
@@ -1657,39 +1739,21 @@
 
       // Initial run
       updateEditionForLicenseType();
+      updateCustomerNumberVisibility();
 
-      // Industry Other toggle
-      industrySelect.addEventListener('change', function() {
-        if (industrySelect.value === 'Other') {
-          industryOtherWrapper.classList.add('visible');
-          industryOtherInput.focus();
-        } else {
-          industryOtherWrapper.classList.remove('visible');
-          industryOtherInput.value = '';
-        }
-      });
-
-      // Additional Products Checkboxes Visual Styles
-      const checkboxes = document.querySelectorAll('input[name="additionalProducts"]');
-      checkboxes.forEach(function(cb) {
+      // Checkboxes Visual Styles (all add-ons in both grids)
+      const allCheckboxes = document.querySelectorAll('input[type="checkbox"]');
+      allCheckboxes.forEach(function(cb) {
         cb.addEventListener('change', function() {
           const parentCard = cb.closest('.checkbox-card');
-          if (cb.checked) {
-            parentCard.classList.add('checked');
-          } else {
-            parentCard.classList.remove('checked');
+          if (parentCard) {
+            if (cb.checked) {
+              parentCard.classList.add('checked');
+            } else {
+              parentCard.classList.remove('checked');
+            }
           }
         });
-      });
-
-      prodOtherCheckbox.addEventListener('change', function() {
-        if (prodOtherCheckbox.checked) {
-          productOtherWrapper.classList.add('visible');
-          productOtherInput.focus();
-        } else {
-          productOtherWrapper.classList.remove('visible');
-          productOtherInput.value = '';
-        }
       });
 
       // Show Toast Helper
@@ -1738,33 +1802,36 @@
         const licenseType = licenseTypeEl ? licenseTypeEl.value : 'Not Sure';
 
         const deploymentType = document.getElementById('deploymentType').value;
-        const billingCadence = document.getElementById('billingCadence').value;
 
         const editionEl = document.querySelector('input[name="edition"]:checked');
         const edition = editionEl ? editionEl.value : 'Not Sure';
 
         const numUsers = document.getElementById('numUsers').value.trim() || '1';
-        const operatingSystem = document.getElementById('operatingSystem').value;
 
-        let industry = industrySelect.value;
-        if (industry === 'Other') {
-          const otherInd = industryOtherInput.value.trim();
-          industry = otherInd ? `Other (${otherInd})` : 'Other';
-        }
+        const isAcademic = isAcademicSelect ? (isAcademicSelect.value === 'Yes') : false;
+        const academicDisplay = isAcademic ? 'Yes (Academic / University Pricing)' : 'No (Commercial / Enterprise)';
 
-        // Additional products
+        const hasCustomerNumber = hasCustomerNumberSelect ? (hasCustomerNumberSelect.value === 'Yes') : false;
+        const custNumVal = customerNumberInput.value.trim();
+        const customerNumberDisplay = hasCustomerNumber ? (custNumVal ? custNumVal : 'Yes (Provided upon contact)') : 'None / New Account';
+
+        // Additional products based on active licensing model
         const selectedProducts = [];
-        checkboxes.forEach(function(cb) {
-          if (cb.checked) {
-            if (cb.value === 'Other') {
-              const otherProd = productOtherInput.value.trim();
-              selectedProducts.push(otherProd ? `Other (${otherProd})` : 'Other');
-            } else {
-              selectedProducts.push(cb.value);
-            }
-          }
-        });
-        const additionalProductsStr = selectedProducts.length > 0 ? selectedProducts.join(', ') : 'None specified / standard edition bundle';
+        const digitalRadio = document.getElementById('lic-digital');
+        const isDigital = digitalRadio && digitalRadio.checked;
+
+        if (isDigital) {
+          const digitalCbs = document.querySelectorAll('input[name="additionalProductsDigital"]:checked');
+          digitalCbs.forEach(function(cb) {
+            selectedProducts.push(cb.value);
+          });
+        } else {
+          const standaloneCbs = document.querySelectorAll('input[name="additionalProducts"]:checked');
+          standaloneCbs.forEach(function(cb) {
+            selectedProducts.push(cb.value);
+          });
+        }
+        const additionalProductsStr = selectedProducts.length > 0 ? selectedProducts.join(', ') : 'None specified / standard base foundation';
 
         const comments = document.getElementById('comments').value.trim() || 'None';
 
@@ -1789,15 +1856,14 @@ I would like to request an official quote for IBM SPSS Statistics with the follo
 • Request Type:     ${requestType}
 • License Model:    ${licenseType}
 • Deployment Type:  ${deploymentType}
-• Billing Cadence:  ${billingCadence}
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 3. SPSS EDITION & CAPACITY
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 • Edition / Tier:   ${edition}
 • Number of Users:  ${numUsers} Seat(s)
-• Operating System: ${operatingSystem}
-• Industry Sector:  ${industry}
+• Academic Instit.: ${academicDisplay}
+• Customer Number:  ${customerNumberDisplay}
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 4. MODULES & SPECIFIC ADD-ONS
@@ -1861,12 +1927,6 @@ ${companyName}`;
           markError('group-users', !firstInvalidField ? numUsers : null);
           isValid = false;
           firstInvalidField = firstInvalidField || numUsers;
-        }
-
-        if (!industrySelect.value) {
-          markError('group-industry', !firstInvalidField ? industrySelect : null);
-          isValid = false;
-          firstInvalidField = firstInvalidField || industrySelect;
         }
 
         if (!isValid) {
@@ -1956,23 +2016,26 @@ ${companyName}`;
         if (confirm('Are you sure you want to clear the form?')) {
           form.reset();
           clearValidationErrors();
-          checkboxes.forEach(function(cb) {
-            cb.closest('.checkbox-card').classList.remove('checked');
+          allCheckboxes.forEach(function(cb) {
+            cb.checked = false;
+            const parent = cb.closest('.checkbox-card');
+            if (parent) parent.classList.remove('checked');
           });
-          industryOtherWrapper.classList.remove('visible');
-          industryOtherInput.value = '';
-          productOtherWrapper.classList.remove('visible');
-          productOtherInput.value = '';
+          if (customerNumberWrapper) {
+            customerNumberWrapper.classList.remove('visible');
+            customerNumberInput.value = '';
+          }
           
-          // Reset default radios
+          // Reset defaults
           document.getElementById('req-new').checked = true;
           document.getElementById('lic-digital').checked = true;
           document.getElementById('ed-base').checked = true;
+          if (isAcademicSelect) isAcademicSelect.value = 'No';
+          if (hasCustomerNumberSelect) hasCustomerNumberSelect.value = 'No';
           document.getElementById('numUsers').value = '1';
           document.getElementById('deploymentType').value = 'Authorized User (Single Named User)';
-          document.getElementById('billingCadence').value = 'Annual Upfront (Standard / Discounted)';
-          document.getElementById('operatingSystem').value = 'Windows';
           updateEditionForLicenseType();
+          updateCustomerNumberVisibility();
           showToast('Form cleared.');
         }
       });
