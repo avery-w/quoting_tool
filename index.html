@@ -1158,6 +1158,18 @@
                 </label>
               </div>
 
+              <!-- 4. Not Sure -->
+              <div class="radio-card">
+                <input type="radio" name="licenseType" id="lic-not-sure" value="Not Sure">
+                <label for="lic-not-sure">
+                  <div class="radio-card-header">
+                    <span class="radio-indicator"></span>
+                    <span class="radio-title">Not Sure</span>
+                  </div>
+                  <span class="radio-desc">Request consultation to evaluate licensing model, TCO, and deployment options.</span>
+                </label>
+              </div>
+
             </div>
           </div>
 
@@ -1301,24 +1313,53 @@
 
             </div>
 
-            <!-- Existing Customer Number Section Dropdown -->
+            <!-- Existing Customer Number & Site Number Section -->
             <div style="margin-top: 22px; padding-top: 20px; border-top: 1px solid var(--border-light);">
-              <div class="form-group" id="group-customer-number">
-                <label for="hasCustomerNumber">
-                  <span>Do you have an existing IBM Customer Number?</span>
-                </label>
-                <select id="hasCustomerNumber" name="hasCustomerNumber" style="max-width: 320px;">
-                  <option value="No" selected>No</option>
-                  <option value="Yes">Yes</option>
-                </select>
+              <div class="grid-2">
+                
+                <!-- Customer Number Dropdown -->
+                <div class="form-group" id="group-customer-number">
+                  <label for="hasCustomerNumber">
+                    <span>Do you have an existing IBM Customer Number?</span>
+                  </label>
+                  <select id="hasCustomerNumber" name="hasCustomerNumber">
+                    <option value="No" selected>No</option>
+                    <option value="Yes">Yes</option>
+                    <option value="Not Sure">Not Sure</option>
+                  </select>
+                </div>
+
+                <!-- Site Number Dropdown (shown only when Customer Number is Yes) -->
+                <div class="form-group other-input-container" id="group-site-number" style="margin-top: 0;">
+                  <label for="hasSiteNumber">
+                    <span>Do you have a Site Number?</span>
+                  </label>
+                  <select id="hasSiteNumber" name="hasSiteNumber">
+                    <option value="No" selected>No</option>
+                    <option value="Yes">Yes</option>
+                    <option value="Not Sure">Not Sure</option>
+                  </select>
+                </div>
+
               </div>
 
-              <!-- Dynamic Customer Number Input -->
-              <div id="customerNumberWrapper" class="other-input-container" style="margin-top: 14px;">
-                <label for="customerNumber" style="font-size: 13px; font-weight: 600; color: var(--text-heading); display: block; margin-bottom: 6px;">
-                  Please provide your IBM Customer Number:
-                </label>
-                <input type="text" id="customerNumber" name="customerNumber" placeholder="e.g. 01234567 or account number" aria-label="IBM Customer Number">
+              <!-- Conditional text inputs for Customer Number & Site Number -->
+              <div class="grid-2" style="margin-top: 14px;">
+                <!-- Customer Number Text Input -->
+                <div id="customerNumberWrapper" class="other-input-container" style="margin-top: 0;">
+                  <label for="customerNumber" style="font-size: 13px; font-weight: 600; color: var(--text-heading); display: block; margin-bottom: 6px;">
+                    Please provide your IBM Customer Number:
+                  </label>
+                  <input type="text" id="customerNumber" name="customerNumber" placeholder="e.g. 01234567 or account number" aria-label="IBM Customer Number">
+                </div>
+
+                <!-- Site Number Text Input -->
+                <div id="siteNumberWrapper" class="other-input-container" style="margin-top: 0;">
+                  <label for="siteNumber" style="font-size: 13px; font-weight: 600; color: var(--text-heading); display: block; margin-bottom: 6px;">
+                    Please provide your Site Number:
+                  </label>
+                  <input type="text" id="siteNumber" name="siteNumber" placeholder="e.g. 7654321" aria-label="Site Number">
+                </div>
               </div>
             </div>
 
@@ -1665,19 +1706,46 @@
       const hasCustomerNumberSelect = document.getElementById('hasCustomerNumber');
       const customerNumberWrapper = document.getElementById('customerNumberWrapper');
       const customerNumberInput = document.getElementById('customerNumber');
+      const groupSiteNumber = document.getElementById('group-site-number');
+      const hasSiteNumberSelect = document.getElementById('hasSiteNumber');
+      const siteNumberWrapper = document.getElementById('siteNumberWrapper');
+      const siteNumberInput = document.getElementById('siteNumber');
 
       function updateCustomerNumberVisibility() {
         if (hasCustomerNumberSelect && hasCustomerNumberSelect.value === 'Yes') {
           customerNumberWrapper.classList.add('visible');
+          if (groupSiteNumber) groupSiteNumber.classList.add('visible');
           customerNumberInput.focus();
-        } else if (customerNumberWrapper) {
-          customerNumberWrapper.classList.remove('visible');
-          customerNumberInput.value = '';
+          updateSiteNumberVisibility();
+        } else {
+          if (customerNumberWrapper) {
+            customerNumberWrapper.classList.remove('visible');
+            customerNumberInput.value = '';
+          }
+          if (groupSiteNumber) groupSiteNumber.classList.remove('visible');
+          if (hasSiteNumberSelect) hasSiteNumberSelect.value = 'No';
+          if (siteNumberWrapper) {
+            siteNumberWrapper.classList.remove('visible');
+            siteNumberInput.value = '';
+          }
+        }
+      }
+
+      function updateSiteNumberVisibility() {
+        if (hasCustomerNumberSelect && hasCustomerNumberSelect.value === 'Yes' && hasSiteNumberSelect && hasSiteNumberSelect.value === 'Yes') {
+          siteNumberWrapper.classList.add('visible');
+          siteNumberInput.focus();
+        } else if (siteNumberWrapper) {
+          siteNumberWrapper.classList.remove('visible');
+          siteNumberInput.value = '';
         }
       }
 
       if (hasCustomerNumberSelect) {
         hasCustomerNumberSelect.addEventListener('change', updateCustomerNumberVisibility);
+      }
+      if (hasSiteNumberSelect) {
+        hasSiteNumberSelect.addEventListener('change', updateSiteNumberVisibility);
       }
 
       function updateEditionForLicenseType() {
@@ -1811,9 +1879,27 @@
         const isAcademic = isAcademicSelect ? (isAcademicSelect.value === 'Yes') : false;
         const academicDisplay = isAcademic ? 'Yes (Academic / University Pricing)' : 'No (Commercial / Enterprise)';
 
-        const hasCustomerNumber = hasCustomerNumberSelect ? (hasCustomerNumberSelect.value === 'Yes') : false;
-        const custNumVal = customerNumberInput.value.trim();
-        const customerNumberDisplay = hasCustomerNumber ? (custNumVal ? custNumVal : 'Yes (Provided upon contact)') : 'None / New Account';
+        const custNumChoice = hasCustomerNumberSelect ? hasCustomerNumberSelect.value : 'No';
+        let customerNumberDisplay = 'No / New Account';
+        if (custNumChoice === 'Yes') {
+          const custNumVal = customerNumberInput.value.trim();
+          customerNumberDisplay = custNumVal ? custNumVal : 'Yes (Provided upon contact)';
+        } else if (custNumChoice === 'Not Sure') {
+          customerNumberDisplay = 'Not Sure / Look up by Account';
+        }
+
+        let siteNumberDisplay = '';
+        if (custNumChoice === 'Yes') {
+          const siteChoice = hasSiteNumberSelect ? hasSiteNumberSelect.value : 'No';
+          if (siteChoice === 'Yes') {
+            const siteVal = siteNumberInput.value.trim();
+            siteNumberDisplay = siteVal ? siteVal : 'Yes (Provided upon contact)';
+          } else if (siteChoice === 'Not Sure') {
+            siteNumberDisplay = 'Not Sure';
+          } else {
+            siteNumberDisplay = 'No';
+          }
+        }
 
         // Additional products based on active licensing model
         const selectedProducts = [];
@@ -1863,7 +1949,7 @@ I would like to request an official quote for IBM SPSS Statistics with the follo
 • Edition / Tier:   ${edition}
 • Number of Users:  ${numUsers} Seat(s)
 • Academic Instit.: ${academicDisplay}
-• Customer Number:  ${customerNumberDisplay}
+• Customer Number:  ${customerNumberDisplay}${siteNumberDisplay ? `\n• Site Number:      ${siteNumberDisplay}` : ''}
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 4. MODULES & SPECIFIC ADD-ONS
@@ -2032,6 +2118,9 @@ ${companyName}`;
           document.getElementById('ed-base').checked = true;
           if (isAcademicSelect) isAcademicSelect.value = 'No';
           if (hasCustomerNumberSelect) hasCustomerNumberSelect.value = 'No';
+          if (hasSiteNumberSelect) hasSiteNumberSelect.value = 'No';
+          if (siteNumberInput) siteNumberInput.value = '';
+          if (siteNumberWrapper) siteNumberWrapper.classList.remove('visible');
           document.getElementById('numUsers').value = '1';
           document.getElementById('deploymentType').value = 'Authorized User (Single Named User)';
           updateEditionForLicenseType();
